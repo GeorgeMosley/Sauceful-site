@@ -115,7 +115,7 @@ export default function Home() {
                 fridge stares.
               </p>
               <div className="hero-ctas">
-                <a href="mailto:hello@sauceful.co.uk" className="btn btn-primary">
+                <a href="https://mail.google.com/mail/?view=cm&to=hello@sauceful.co.uk" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                   Coming soon — email us
                 </a>
                 <a href="#how" className="btn btn-ghost">
@@ -255,7 +255,7 @@ export default function Home() {
               We&rsquo;re putting the finishing touches to Sauceful. Drop us a line
               and we&rsquo;ll tell you the moment it&rsquo;s ready.
             </p>
-            <a href="mailto:hello@sauceful.co.uk" className="btn btn-peach">
+            <a href="https://mail.google.com/mail/?view=cm&to=hello@sauceful.co.uk" target="_blank" rel="noopener noreferrer" className="btn btn-peach">
               Coming soon — email us
             </a>
           </div>

@@ -168,7 +168,7 @@ export default function About() {
               We&rsquo;re still in the kitchen building Sauceful — and we read
               every message. We&rsquo;d love yours.
             </p>
-            <a href="mailto:hello@sauceful.co.uk" className="btn btn-peach">
+            <a href="https://mail.google.com/mail/?view=cm&to=hello@sauceful.co.uk" target="_blank" rel="noopener noreferrer" className="btn btn-peach">
               Say hello
             </a>
           </div>

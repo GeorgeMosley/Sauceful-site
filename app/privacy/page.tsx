@@ -21,7 +21,7 @@ export default function Privacy() {
               how and why we might access, collect, store, use, and/or share your personal information when
               you use our services, including when you download and use our mobile application (Sauceful).
               Questions or concerns? Contact us at{' '}
-              <a href="mailto:hello@sauceful.co.uk" style={{ color: 'var(--c-peach-dk)' }}>hello@sauceful.co.uk</a>.
+              <a href="https://mail.google.com/mail/?view=cm&to=hello@sauceful.co.uk" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--c-peach-dk)' }}>hello@sauceful.co.uk</a>.
             </p>
             <hr className="legal-divider" />
 
@@ -118,7 +118,7 @@ export default function Privacy() {
               <div className="legal-section">
                 <p className="legal-section-title">8. Do we collect information from minors?</p>
                 <p className="legal-in-short">In Short: We do not knowingly collect data from or market to children under 18 years of age.</p>
-                <p>We do not knowingly collect, solicit data from, or market to children under 18 years of age, nor do we knowingly sell such personal information. By using the Services, you represent that you are at least 18. If we learn that personal information from users less than 18 years of age has been collected, we will deactivate the account and take reasonable measures to promptly delete such data. If you become aware of any data we may have collected from children under age 18, please contact us at <a href="mailto:hello@sauceful.co.uk" style={{ color: 'var(--c-peach-dk)' }}>hello@sauceful.co.uk</a>.</p>
+                <p>We do not knowingly collect, solicit data from, or market to children under 18 years of age, nor do we knowingly sell such personal information. By using the Services, you represent that you are at least 18. If we learn that personal information from users less than 18 years of age has been collected, we will deactivate the account and take reasonable measures to promptly delete such data. If you become aware of any data we may have collected from children under age 18, please contact us at <a href="https://mail.google.com/mail/?view=cm&to=hello@sauceful.co.uk" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--c-peach-dk)' }}>hello@sauceful.co.uk</a>.</p>
               </div>
 
               <div className="legal-section">
@@ -126,7 +126,7 @@ export default function Privacy() {
                 <p className="legal-in-short">In Short: In some regions, such as the UK and EEA, you have rights that allow you greater access to and control over your personal information.</p>
                 <p>In some regions (like the EEA, UK, and Switzerland), you have certain rights under applicable data protection laws. These may include the right to request access and obtain a copy of your personal information, to request rectification or erasure, to restrict the processing of your personal information, to data portability, and not to be subject to automated decision-making.</p>
                 <p>If you are located in the EEA or UK and you believe we are unlawfully processing your personal information, you also have the right to complain to your Member State data protection authority or the UK data protection authority (the ICO).</p>
-                <p><strong>Withdrawing your consent:</strong> If we are relying on your consent to process your personal information, you have the right to withdraw your consent at any time by contacting us at <a href="mailto:hello@sauceful.co.uk" style={{ color: 'var(--c-peach-dk)' }}>hello@sauceful.co.uk</a>.</p>
+                <p><strong>Withdrawing your consent:</strong> If we are relying on your consent to process your personal information, you have the right to withdraw your consent at any time by contacting us at <a href="https://mail.google.com/mail/?view=cm&to=hello@sauceful.co.uk" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--c-peach-dk)' }}>hello@sauceful.co.uk</a>.</p>
                 <p>If you would like to review or change the information in your account or terminate your account, you can log in to your account settings and update your user account, or email us directly.</p>
               </div>
 
@@ -143,12 +143,12 @@ export default function Privacy() {
 
               <div className="legal-section">
                 <p className="legal-section-title">12. How can you contact us about this notice?</p>
-                <p>If you have questions or comments about this notice, you may email us at <a href="mailto:hello@sauceful.co.uk" style={{ color: 'var(--c-peach-dk)' }}>hello@sauceful.co.uk</a> or contact us by post at: Sauceful Ltd, United Kingdom.</p>
+                <p>If you have questions or comments about this notice, you may email us at <a href="https://mail.google.com/mail/?view=cm&to=hello@sauceful.co.uk" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--c-peach-dk)' }}>hello@sauceful.co.uk</a> or contact us by post at: Sauceful Ltd, United Kingdom.</p>
               </div>
 
               <div className="legal-section">
                 <p className="legal-section-title">13. How can you review, update, or delete the data we collect from you?</p>
-                <p>Based on the applicable laws of your country, you may have the right to request access to the personal information we collect from you, details about how we have processed it, correct inaccuracies, or delete your personal information. You may also have the right to withdraw your consent to our processing of your personal information. To request to review, update, or delete your personal information, please contact us at <a href="mailto:hello@sauceful.co.uk" style={{ color: 'var(--c-peach-dk)' }}>hello@sauceful.co.uk</a>.</p>
+                <p>Based on the applicable laws of your country, you may have the right to request access to the personal information we collect from you, details about how we have processed it, correct inaccuracies, or delete your personal information. You may also have the right to withdraw your consent to our processing of your personal information. To request to review, update, or delete your personal information, please contact us at <a href="https://mail.google.com/mail/?view=cm&to=hello@sauceful.co.uk" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--c-peach-dk)' }}>hello@sauceful.co.uk</a>.</p>
               </div>
 
             </div>

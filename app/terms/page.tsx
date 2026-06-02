@@ -21,7 +21,7 @@ export default function Terms() {
               We operate the mobile application Sauceful, as well as any other related products and services that
               refer or link to these legal terms (collectively, the &lsquo;Services&rsquo;).
               You can contact us at{' '}
-              <a href="mailto:hello@sauceful.co.uk" style={{ color: 'var(--c-peach-dk)' }}>hello@sauceful.co.uk</a>.
+              <a href="https://mail.google.com/mail/?view=cm&to=hello@sauceful.co.uk" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--c-peach-dk)' }}>hello@sauceful.co.uk</a>.
             </p>
             <p className="legal-note" style={{ marginTop: -12 }}>
               These Legal Terms constitute a legally binding agreement between you and Sauceful Ltd concerning
@@ -101,7 +101,7 @@ export default function Terms() {
                 <p className="legal-section-title">6. Subscriptions</p>
                 <p><strong>Billing and Renewal.</strong> Your subscription will continue and automatically renew unless cancelled. You consent to our charging your payment method on a recurring basis without requiring your prior approval for each recurring charge, until such time as you cancel.</p>
                 <p><strong>Free Trial.</strong> We offer a 30-day free trial to new users who register with the Services. The account will be charged according to the user&rsquo;s chosen subscription at the end of the free trial.</p>
-                <p><strong>Cancellation.</strong> All purchases are non-refundable. You can cancel your subscription at any time by logging into your account. Your cancellation will take effect at the end of the current paid term. If you have any questions or are unsatisfied with our Services, please email us at <a href="mailto:hello@sauceful.co.uk" style={{ color: 'var(--c-peach-dk)' }}>hello@sauceful.co.uk</a>.</p>
+                <p><strong>Cancellation.</strong> All purchases are non-refundable. You can cancel your subscription at any time by logging into your account. Your cancellation will take effect at the end of the current paid term. If you have any questions or are unsatisfied with our Services, please email us at <a href="https://mail.google.com/mail/?view=cm&to=hello@sauceful.co.uk" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--c-peach-dk)' }}>hello@sauceful.co.uk</a>.</p>
                 <p><strong>Fee Changes.</strong> We may, from time to time, make changes to the subscription fee and will communicate any price changes to you in accordance with applicable law.</p>
               </div>
 
@@ -218,7 +218,7 @@ export default function Terms() {
                 <p>
                   <strong>Sauceful Ltd</strong><br />
                   United Kingdom<br />
-                  <a href="mailto:hello@sauceful.co.uk" style={{ color: 'var(--c-peach-dk)' }}>hello@sauceful.co.uk</a>
+                  <a href="https://mail.google.com/mail/?view=cm&to=hello@sauceful.co.uk" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--c-peach-dk)' }}>hello@sauceful.co.uk</a>
                 </p>
               </div>
 
