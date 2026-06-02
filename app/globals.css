@@ -1007,29 +1007,25 @@ em {
   .sticker { font-size: 12px; padding: 8px 12px; }
 }
 
-/* ── Floating food emojis ────────────────────────────────── */
-.floating-emojis {
+/* ── Food emoji layer (parallax-driven by ScrollEffects rAF loop) ─── */
+.emoji-layer {
   position: fixed;
   inset: 0;
   pointer-events: none;
-  z-index: 0;
+  z-index: 2;
   overflow: hidden;
 }
 
-.floating-emoji {
+.emoji-float {
   position: absolute;
-  bottom: -60px;
-  font-size: 22px;
-  opacity: 0;
-  animation: emoji-float linear infinite;
-  will-change: transform, opacity;
+  line-height: 1;
+  user-select: none;
+  will-change: transform;
 }
 
-@keyframes emoji-float {
-  0%   { transform: translateY(0) rotate(-8deg);    opacity: 0;    }
-  8%   { opacity: 0.16; }
-  92%  { opacity: 0.10; }
-  100% { transform: translateY(-110vh) rotate(8deg); opacity: 0;    }
+/* Hide on small screens where they'd crowd the content */
+@media (max-width: 640px) {
+  .emoji-layer { display: none; }
 }
 
 /* ── Scroll reveal (rAF-driven — JS adds .js-reveal to body) ── */

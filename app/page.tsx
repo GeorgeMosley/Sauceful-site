@@ -85,6 +85,7 @@ export default function Home() {
           {/* Background blobs */}
           <div
             className="hero-blob"
+            data-par-bg="0.25"
             style={{
               width: 460, height: 460,
               background: 'var(--c-peach)',
@@ -94,6 +95,7 @@ export default function Home() {
           />
           <div
             className="hero-blob"
+            data-par-bg="0.15"
             style={{
               width: 300, height: 300,
               background: 'var(--c-peach-soft)',
@@ -124,7 +126,7 @@ export default function Home() {
             </div>
 
             {/* Visual */}
-            <div className="hero-visual">
+            <div className="hero-visual" data-phone-par="0.06">
               <div
                 className="sticker sticker-peach"
                 style={{ top: 10, right: -10, transform: 'rotate(4deg)', '--bob-dur': '4.8s', '--bob-delay': '0s' } as React.CSSProperties}
@@ -202,7 +204,7 @@ export default function Home() {
         <div>
           <div className="feature">
             {/* Phone visual */}
-            <div className="feature-visual">
+            <div className="feature-visual" data-phone-par="0.05">
               <div
                 className="sticker sticker-cocoa"
                 style={{ bottom: -10, right: -30, transform: 'rotate(3deg)', '--bob-dur': '4.9s', '--bob-delay': '0.3s' } as React.CSSProperties}
