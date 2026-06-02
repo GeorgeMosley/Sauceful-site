@@ -205,12 +205,6 @@ export default function Home() {
           <div className="feature">
             {/* Phone visual */}
             <div className="feature-visual" data-phone-par="0.05">
-              <div
-                className="sticker sticker-cocoa"
-                style={{ bottom: -10, right: -30, transform: 'rotate(3deg)', '--bob-dur': '4.9s', '--bob-delay': '0.3s' } as React.CSSProperties}
-              >
-                cleared plates 😙
-              </div>
               <Device
                 scale={0.64}
                 tilt="left"
