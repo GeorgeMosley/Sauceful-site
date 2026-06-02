@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { createPortal } from 'react-dom';
 
 interface Props {
   label: string;
@@ -45,7 +46,7 @@ export default function ContactButton({ label, btnClass = 'btn btn-primary' }: P
     <>
       <button className={btnClass} onClick={open}>{label}</button>
 
-      {isOpen && (
+      {isOpen && createPortal(
         <div className="modal-overlay" onClick={close}>
           <div className="modal-card" onClick={e => e.stopPropagation()}>
             <button className="modal-close" onClick={close} aria-label="Close">✕</button>
@@ -112,7 +113,8 @@ export default function ContactButton({ label, btnClass = 'btn btn-primary' }: P
               </>
             )}
           </div>
-        </div>
+        </div>,
+        document.body
       )}
     </>
   );
