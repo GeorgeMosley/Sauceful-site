@@ -1061,8 +1061,8 @@ em {
 
 @keyframes emoji-rise {
   0%   { transform: translateY(0)        rotate(-6deg); opacity: 0;    }
-  8%   { opacity: 0.35; }
-  92%  { opacity: 0.25; }
+  8%   { opacity: 0.21; }
+  92%  { opacity: 0.15; }
   100% { transform: translateY(-115vh)   rotate(6deg);  opacity: 0;    }
 }
 
