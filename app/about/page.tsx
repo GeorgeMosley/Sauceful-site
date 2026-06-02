@@ -121,7 +121,7 @@ export default function About() {
 
             <div className="values-grid" data-reveal>
               {/* Card 1 */}
-              <div className="value-card pop" style={{ transform: 'rotate(-2.5deg)' }}>
+              <div className="value-card pop" style={{ '--base-rot': '-2.5deg' } as React.CSSProperties} data-reveal>
                 <div className="value-dot value-dot-peach">🍽</div>
                 <p className="value-title">Dinners, done properly</p>
                 <p className="value-body">
@@ -131,7 +131,7 @@ export default function About() {
               </div>
 
               {/* Card 2 */}
-              <div className="value-card pop" style={{ transform: 'rotate(2.5deg)' }}>
+              <div className="value-card pop" style={{ '--base-rot': '2.5deg' } as React.CSSProperties} data-reveal>
                 <div className="value-dot value-dot-soft">🙅</div>
                 <p className="value-title">Built around your tastes</p>
                 <p className="value-body">
@@ -142,7 +142,7 @@ export default function About() {
               </div>
 
               {/* Card 3 */}
-              <div className="value-card pop" style={{ transform: 'rotate(-2.5deg)' }}>
+              <div className="value-card pop" style={{ '--base-rot': '-2.5deg' } as React.CSSProperties} data-reveal>
                 <div className="value-dot value-dot-peach">🥕</div>
                 <p className="value-title">Honest about food</p>
                 <p className="value-body">
