@@ -29,7 +29,10 @@
   --maxw: 1160px;
 }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden; /* Belt-and-braces with body — needed for iOS Safari */
+}
 
 body {
   background: #FAF6F0;
@@ -1025,14 +1028,19 @@ em {
 @media (max-width: 880px) {
   .section { padding: 64px 24px; }
 
+  /* Clip the hero blobs so they can't trigger horizontal scroll */
+  .hero-section { overflow: hidden; }
+
   .hero {
     grid-template-columns: 1fr;
-    padding: 56px 24px 48px;
+    padding: 56px 24px 64px; /* extra bottom padding keeps phone clear of marquee */
     text-align: center;
   }
   .hero-lead    { max-width: 100%; }
   .hero-ctas    { justify-content: center; }
-  .hero-visual  { min-height: 420px; margin-top: 16px; }
+  /* Phone parallax is disabled on mobile; give the visual enough room so the
+     device doesn't crowd the marquee below it */
+  .hero-visual  { min-height: 0; margin-top: 24px; margin-bottom: 16px; overflow: visible; }
 
   .feature {
     grid-template-columns: 1fr;

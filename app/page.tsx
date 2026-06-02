@@ -227,7 +227,7 @@ export default function Home() {
                 <span className="marker">actually wants.</span>
               </h2>
               <p className="lead lead-sm feature-lead">
-                Every plan works around the tastes and hard-nos you set, so dinner
+                Every plan works around the likes and dislikes you set, so dinner
                 lands on the table without the nightly negotiation.
               </p>
               <div className="ticks">

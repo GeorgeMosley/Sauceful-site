@@ -62,15 +62,23 @@ export default function ScrollEffects() {
         el.style.transform = `translateY(${sy * f}px)`;
       }
 
-      // 4 · Phone parallax + scroll-linked tilt
-      for (const el of phoneEls) {
-        const driftF = parseFloat(el.dataset.phonePar ?? '0.06');
-        const rect   = el.getBoundingClientRect();
-        const mid    = rect.top + rect.height / 2;
-        // rel: –1 (element at viewport top) → 0 (centre) → +1 (bottom)
-        const rel    = ((mid - vh / 2) / (vh / 2));
-        const tilt   = Math.max(-4, Math.min(4, rel * 5)); // ±4 deg max
-        el.style.transform = `translateY(${sy * driftF}px) rotate(${tilt}deg)`;
+      // 4 · Phone parallax + scroll-linked tilt (desktop only — on mobile the
+      //     phone drifts into the sections below it, so we disable and reset.)
+      if (window.innerWidth > 880) {
+        for (const el of phoneEls) {
+          const driftF = parseFloat(el.dataset.phonePar ?? '0.06');
+          const rect   = el.getBoundingClientRect();
+          const mid    = rect.top + rect.height / 2;
+          // rel: –1 (element at viewport top) → 0 (centre) → +1 (bottom)
+          const rel    = ((mid - vh / 2) / (vh / 2));
+          const tilt   = Math.max(-4, Math.min(4, rel * 5)); // ±4 deg max
+          el.style.transform = `translateY(${sy * driftF}px) rotate(${tilt}deg)`;
+        }
+      } else {
+        // Reset any transform left over from a desktop→mobile resize
+        for (const el of phoneEls) {
+          el.style.transform = '';
+        }
       }
 
       // 5 · Scroll reveal — re-query each tick so elements added by client-side
