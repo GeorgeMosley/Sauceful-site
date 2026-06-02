@@ -389,6 +389,13 @@ em {
   align-items: center;
 }
 
+.hero-beta-note {
+  margin-top: 14px;
+  font-size: 13px;
+  color: var(--c-cocoa-soft);
+  font-family: var(--font-sans);
+}
+
 .hero-visual {
   position: relative;
   display: flex;
