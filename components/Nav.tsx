@@ -12,7 +12,7 @@ export default function Nav() {
   return (
     <nav className="nav">
       <div className="nav-inner">
-        <Link href="/" className="wordmark" style={{ fontSize: 25 }}>
+        <Link href="/" className="wordmark" style={{ fontSize: 35 }}>
           <span className="wm-sauce">sauce</span>
           <span className="wm-ful">ful</span>
           <span className="wm-dot">.</span>
