@@ -171,7 +171,7 @@ export default function Home() {
 
             <div className="steps-grid">
               {/* Step 1 */}
-              <div className="step pop" style={{ transform: 'rotate(-2.5deg)' }} data-reveal>
+              <div className="step pop" style={{ '--base-rot': '-2.5deg' } as React.CSSProperties} data-reveal>
                 <div className="step-num">1</div>
                 <p className="step-title">Tell the app what you need.</p>
                 <p className="step-body">
@@ -180,7 +180,7 @@ export default function Home() {
               </div>
 
               {/* Step 2 */}
-              <div className="step pop" style={{ transform: 'rotate(2.5deg)' }} data-reveal>
+              <div className="step pop" style={{ '--base-rot': '2.5deg' } as React.CSSProperties} data-reveal>
                 <div className="step-num">2</div>
                 <p className="step-title">Dinner? Handled. In 30 seconds.</p>
                 <p className="step-body">
@@ -189,7 +189,7 @@ export default function Home() {
               </div>
 
               {/* Step 3 */}
-              <div className="step pop" style={{ transform: 'rotate(-2.5deg)' }} data-reveal>
+              <div className="step pop" style={{ '--base-rot': '-2.5deg' } as React.CSSProperties} data-reveal>
                 <div className="step-num">3</div>
                 <p className="step-title">The shopping does itself.</p>
                 <p className="step-body">

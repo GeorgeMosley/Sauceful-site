@@ -1,29 +1,25 @@
 'use client';
 
-// Emojis are position:fixed (via .emoji-layer) at various viewport positions.
-// The ScrollEffects rAF loop reads [data-par] and applies translateY(-scrollY * factor)
-// so each drifts upward at its own speed as the page scrolls — classic parallax.
+// 16 emojis evenly distributed horizontally (~6% apart).
+// Movement is driven purely by CSS @keyframes emoji-rise — no JS needed.
+// The ScrollEffects rAF loop ignores these (no data-par attribute).
 const FLOATERS = [
-  // ── Left edge ───────────────────────────────────
-  { emoji: '🍅', left: '2.5%',  top: '12vh',  par: 0.12, size: 40 },
-  { emoji: '🥕', left: '5%',    top: '32vh',  par: 0.21, size: 36 },
-  { emoji: '🌶️', left: '3%',    top: '54vh',  par: 0.16, size: 34 },
-  { emoji: '🥦', left: '6%',    top: '74vh',  par: 0.24, size: 38 },
-  { emoji: '🧄', left: '2%',    top: '90vh',  par: 0.13, size: 30 },
-  // ── Right edge ──────────────────────────────────
-  { emoji: '🥑', left: '93%',   top: '8vh',   par: 0.19, size: 38 },
-  { emoji: '🍋', left: '95%',   top: '28vh',  par: 0.11, size: 36 },
-  { emoji: '🍄', left: '92%',   top: '50vh',  par: 0.26, size: 34 },
-  { emoji: '🧅', left: '94%',   top: '70vh',  par: 0.18, size: 32 },
-  { emoji: '🥒', left: '93%',   top: '88vh',  par: 0.22, size: 34 },
-  // ── Inner left (visible on wider screens) ───────
-  { emoji: '🫑', left: '11%',   top: '20vh',  par: 0.15, size: 32 },
-  { emoji: '🫒', left: '9%',    top: '62vh',  par: 0.20, size: 28 },
-  { emoji: '🌿', left: '10%',   top: '82vh',  par: 0.14, size: 26 },
-  // ── Inner right ─────────────────────────────────
-  { emoji: '🍳', left: '88%',   top: '40vh',  par: 0.17, size: 36 },
-  { emoji: '🫐', left: '89%',   top: '76vh',  par: 0.22, size: 32 },
-  { emoji: '🥘', left: '87%',   top: '18vh',  par: 0.19, size: 30 },
+  { emoji: '🍅', left: '3%',   dur: 20, delay: 0    },
+  { emoji: '🥕', left: '9%',   dur: 24, delay: 3.5  },
+  { emoji: '🥦', left: '15%',  dur: 18, delay: 7    },
+  { emoji: '🧄', left: '21%',  dur: 22, delay: 1.5  },
+  { emoji: '🌶️', left: '27%',  dur: 26, delay: 10   },
+  { emoji: '🍋', left: '33%',  dur: 19, delay: 5    },
+  { emoji: '🥑', left: '39%',  dur: 23, delay: 13   },
+  { emoji: '🍄', left: '45%',  dur: 21, delay: 8    },
+  { emoji: '🧅', left: '51%',  dur: 25, delay: 2.5  },
+  { emoji: '🥒', left: '57%',  dur: 17, delay: 15   },
+  { emoji: '🫑', left: '63%',  dur: 20, delay: 6    },
+  { emoji: '🍳', left: '69%',  dur: 23, delay: 11   },
+  { emoji: '🫒', left: '75%',  dur: 19, delay: 4    },
+  { emoji: '🌿', left: '81%',  dur: 22, delay: 9    },
+  { emoji: '🫐', left: '87%',  dur: 18, delay: 14   },
+  { emoji: '🥘', left: '93%',  dur: 24, delay: 0.5  },
 ];
 
 export default function FloatingEmojis() {
@@ -33,8 +29,11 @@ export default function FloatingEmojis() {
         <span
           key={i}
           className="emoji-float"
-          data-par={f.par}
-          style={{ left: f.left, top: f.top, fontSize: f.size } as React.CSSProperties}
+          style={{
+            left: f.left,
+            animationDuration: `${f.dur}s`,
+            animationDelay: `${f.delay}s`,
+          } as React.CSSProperties}
         >
           {f.emoji}
         </span>
