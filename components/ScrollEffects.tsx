@@ -24,11 +24,13 @@ export default function ScrollEffects() {
     // ── Enable CSS reveal rules ───────────────────────────────────────────
     document.body.classList.add('js-reveal');
 
-    // ── Collect targets ───────────────────────────────────────────────────
-    const emojiEls  = Array.from(document.querySelectorAll<HTMLElement>('[data-par]'));
-    const blobEls   = Array.from(document.querySelectorAll<HTMLElement>('[data-par-bg]'));
-    const phoneEls  = Array.from(document.querySelectorAll<HTMLElement>('[data-phone-par]'));
-    const revealEls = Array.from(document.querySelectorAll<HTMLElement>('[data-reveal]'));
+    // ── Collect static targets (parallax elements don't change between pages) ──
+    const emojiEls = Array.from(document.querySelectorAll<HTMLElement>('[data-par]'));
+
+    // Blob and phone parallax targets may differ per page — re-query lazily
+    let blobEls:  HTMLElement[] = [];
+    let phoneEls: HTMLElement[] = [];
+    let lastPath  = '';
 
     let frame: number;
 
@@ -36,6 +38,14 @@ export default function ScrollEffects() {
       const sy   = window.scrollY;
       const docH = document.documentElement.scrollHeight - window.innerHeight;
       const vh   = window.innerHeight;
+
+      // Re-collect per-page parallax elements on route change
+      const path = window.location.pathname;
+      if (path !== lastPath) {
+        lastPath  = path;
+        blobEls   = Array.from(document.querySelectorAll<HTMLElement>('[data-par-bg]'));
+        phoneEls  = Array.from(document.querySelectorAll<HTMLElement>('[data-phone-par]'));
+      }
 
       // 1 · Progress bar
       bar.style.width = `${Math.min(100, docH > 0 ? (sy / docH) * 100 : 0)}%`;
@@ -63,10 +73,12 @@ export default function ScrollEffects() {
         el.style.transform = `translateY(${sy * driftF}px) rotate(${tilt}deg)`;
       }
 
-      // 5 · Scroll reveal
-      for (const el of revealEls) {
-        if (!el.classList.contains('is-visible') &&
-            el.getBoundingClientRect().top < vh * 0.9) {
+      // 5 · Scroll reveal — re-query each tick so elements added by client-side
+      //     navigation are caught without needing a page refresh.
+      //     :not(.is-visible) keeps the NodeList empty once all are revealed → near-zero cost.
+      const toReveal = document.querySelectorAll<HTMLElement>('[data-reveal]:not(.is-visible)');
+      for (const el of toReveal) {
+        if (el.getBoundingClientRect().top < vh * 0.9) {
           el.classList.add('is-visible');
         }
       }
