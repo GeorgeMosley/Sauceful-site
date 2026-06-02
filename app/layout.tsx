@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import FloatingEmojis from '@/components/FloatingEmojis';
+import ScrollReveal from '@/components/ScrollReveal';
 
 export const metadata: Metadata = {
   title: 'Sauceful — The secret sauce of dinner planning',
@@ -17,7 +19,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           rel="stylesheet"
         />
       </head>
-      <body>{children}</body>
+      <body>
+        <FloatingEmojis />
+        <ScrollReveal />
+        {children}
+      </body>
     </html>
   );
 }

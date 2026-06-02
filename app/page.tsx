@@ -52,9 +52,9 @@ function Device({
 /* ── Marquee row ─────────────────────────────────────────── */
 const MARQUEE_PHRASES = [
   'No more 5pm panic',
-  'Kid-tested dinners',
-  'Hidden veg, zero drama',
+  'Plan around your tastes',
   'A week sorted in 30 seconds',
+  'Less waste, more dinners you love',
 ];
 
 function MarqueeRow() {
@@ -105,23 +105,22 @@ export default function Home() {
           <div className="hero">
             {/* Text */}
             <div className="hero-content">
-              <span className="eyebrow">★ Meal planning for real families</span>
+              <span className="eyebrow">★ Dinner planning for real households</span>
               <h1 className="display hero-headline">
-                Weeknight dinners,<br />
-                <span className="marker">actually sorted.</span>
+                The secret <em>sauce</em><br />
+                of dinner planning
               </h1>
               <p className="lead hero-lead">
-                Personalised weekly meal plans for families with fussy eaters —
-                built around the food your kids will <em>actually</em> eat.
-                No more 5pm fridge stares.
+                Personalised weekly dinner plans, built around the food your
+                household actually loves. Less waste, less faff, no more 5pm
+                fridge stares.
               </p>
               <div className="hero-ctas">
-                <ContactButton label="Get early access" btnClass="btn btn-primary" />
+                <ContactButton label="Coming soon — get in touch" btnClass="btn btn-primary" />
                 <a href="#how" className="btn btn-ghost">
                   See how it works
                 </a>
               </div>
-              <p className="hero-beta-note">Free while we&rsquo;re in beta · Dinners only, on purpose</p>
             </div>
 
             {/* Visual */}
@@ -130,7 +129,7 @@ export default function Home() {
                 className="sticker sticker-peach"
                 style={{ top: 10, right: -10, transform: 'rotate(4deg)', '--bob-dur': '4.8s', '--bob-delay': '0s' } as React.CSSProperties}
               >
-                kid-tested ✓
+                Customised recipes
               </div>
               <div
                 className="sticker sticker-cocoa"
@@ -160,39 +159,39 @@ export default function Home() {
         {/* ── HOW IT WORKS ─────────────────────────────── */}
         <div id="how" className="band-peach">
           <div className="section">
-            <div className="section-head">
+            <div className="section-head" data-reveal>
               <span className="eyebrow">★ How it works</span>
               <h2 className="h2">
-                Blank week to <span className="marker">sorted</span><br />
+                Blank week to <span className="marker">handled</span><br />
                 in three steps.
               </h2>
             </div>
 
             <div className="steps-grid">
               {/* Step 1 */}
-              <div className="step pop" style={{ transform: 'rotate(-2.5deg)' }}>
+              <div className="step pop" style={{ transform: 'rotate(-2.5deg)' }} data-reveal>
                 <div className="step-num">1</div>
-                <p className="step-title">Tell us who&rsquo;s eating</p>
+                <p className="step-title">Tell the app what you need.</p>
                 <p className="step-body">
-                  Names, ages and the foods that get a hard no. Two minutes, tops.
+                  Your week, your people, your budget. Even your fussiest eater.
                 </p>
               </div>
 
               {/* Step 2 */}
-              <div className="step pop" style={{ transform: 'rotate(2.5deg)' }}>
+              <div className="step pop" style={{ transform: 'rotate(2.5deg)' }} data-reveal>
                 <div className="step-num">2</div>
-                <p className="step-title">We stir up your week</p>
+                <p className="step-title">Dinner? Handled. In 30 seconds.</p>
                 <p className="step-body">
-                  Seven dinners, balanced and kid-tested, in about 30 seconds.
+                  A full week of home-cooked meals, planned before your kettle boils.
                 </p>
               </div>
 
               {/* Step 3 */}
-              <div className="step pop" style={{ transform: 'rotate(-2.5deg)' }}>
+              <div className="step pop" style={{ transform: 'rotate(-2.5deg)' }} data-reveal>
                 <div className="step-num">3</div>
-                <p className="step-title">Shop in one tap</p>
+                <p className="step-title">The shopping does itself.</p>
                 <p className="step-body">
-                  A tidy list, grouped by aisle, ready for your basket.
+                  Every ingredient listed, grouped by aisle, ready for your basket, in-store or online!
                 </p>
               </div>
             </div>
@@ -219,7 +218,7 @@ export default function Home() {
             </div>
 
             {/* Text */}
-            <div className="feature-content">
+            <div className="feature-content" data-reveal>
               <span className="eyebrow">★ Recipes, not roulette</span>
               <h2 className="h2 feature-headline">
                 Meals everyone<br />
@@ -240,7 +239,7 @@ export default function Home() {
 
         {/* ── CTA BAND ─────────────────────────────────── */}
         <div className="cta-band-wrap">
-          <div className="cta-band">
+          <div className="cta-band" data-reveal>
             <div
               className="sticker sticker-white"
               style={{ top: -18, right: 60, transform: 'rotate(-3deg)', '--bob-dur': '5s', '--bob-delay': '0.5s' } as React.CSSProperties}

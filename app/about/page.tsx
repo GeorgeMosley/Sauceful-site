@@ -77,7 +77,7 @@ export default function About() {
         </div>
 
         {/* ── STORY ────────────────────────────────────── */}
-        <div className="story">
+        <div className="story" data-reveal>
           <div className="story-col">
             <p>
               Every week began the same way: a vague plan, a panic shop, and half
@@ -112,15 +112,14 @@ export default function About() {
         {/* ── VALUES ───────────────────────────────────── */}
         <div className="band-peach">
           <div className="section">
-            <div className="section-head">
+            <div className="section-head" data-reveal>
               <span className="eyebrow">★ What we believe</span>
               <h2 className="h2">
-                Three things we{' '}
-                <span className="marker">won&rsquo;t</span> budge on.
+                Three things we <span className="marker">won&rsquo;t</span> budge on.
               </h2>
             </div>
 
-            <div className="values-grid">
+            <div className="values-grid" data-reveal>
               {/* Card 1 */}
               <div className="value-card pop" style={{ transform: 'rotate(-2.5deg)' }}>
                 <div className="value-dot value-dot-peach">🍽</div>
