@@ -129,8 +129,8 @@ em {
 /* --- Marker highlight --- */
 .marker {
   display: inline-block;
-  background: var(--c-peach);
-  color: var(--c-cocoa);
+  background: var(--c-peach-dk);
+  color: var(--c-cream);
   padding: 0.02em 0.22em;
   border-radius: 10px 14px 11px 13px;
   transform: rotate(-1.5deg);
@@ -628,7 +628,7 @@ em {
 .story-col p {
   font-size: 17.5px;
   line-height: 1.62;
-  color: var(--c-cocoa-soft);
+  color: var(--c-cocoa);
   margin-bottom: 22px;
 }
 .story-col p:last-child { margin-bottom: 0; }

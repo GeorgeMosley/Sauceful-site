@@ -51,8 +51,7 @@ function Device({
 /* ── Marquee row ─────────────────────────────────────────── */
 const MARQUEE_PHRASES = [
   'No more 5pm panic',
-  'Kid-tested dinners',
-  'Hidden veg, zero drama',
+  'Plan around your tastes',
   'A week sorted in 30 seconds',
   'Less waste, more dinners you love',
 ];
@@ -111,8 +110,9 @@ export default function Home() {
                 of dinner planning
               </h1>
               <p className="lead hero-lead">
-                A week of meals your family actually wants — planned around your
-                tastes, built in 30 seconds.
+                Personalised weekly dinner plans, built around the food your
+                household actually loves. Less waste, less faff, no more 5pm
+                fridge stares.
               </p>
               <div className="hero-ctas">
                 <a href="mailto:hello@sauceful.co.uk" className="btn btn-primary">
@@ -172,27 +172,27 @@ export default function Home() {
               {/* Step 1 */}
               <div className="step pop" style={{ transform: 'rotate(-2.5deg)' }}>
                 <div className="step-num">1</div>
-                <p className="step-title">Tell us who&rsquo;s eating</p>
+                <p className="step-title">Tell the app what you need.</p>
                 <p className="step-body">
-                  Names, ages and the foods that get a hard no. Two minutes, tops.
+                  Your week, your people, your budget. Even your fussiest eater.
                 </p>
               </div>
 
               {/* Step 2 */}
               <div className="step pop" style={{ transform: 'rotate(2.5deg)' }}>
                 <div className="step-num">2</div>
-                <p className="step-title">We stir up your week</p>
+                <p className="step-title">Dinner? Handled. In 30 seconds.</p>
                 <p className="step-body">
-                  Seven dinners, balanced and kid-tested, in about 30 seconds.
+                  A full week of home-cooked meals, planned before your kettle boils.
                 </p>
               </div>
 
               {/* Step 3 */}
               <div className="step pop" style={{ transform: 'rotate(-2.5deg)' }}>
                 <div className="step-num">3</div>
-                <p className="step-title">Shop in one tap</p>
+                <p className="step-title">The shopping does itself.</p>
                 <p className="step-body">
-                  A tidy list, grouped by aisle, ready for your basket.
+                  Every ingredient listed, grouped by aisle, ready for your basket, in-store or online!
                 </p>
               </div>
             </div>

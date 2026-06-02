@@ -68,9 +68,9 @@ export default function About() {
               <span className="marker">5pm panic.</span>
             </h1>
             <p className="lead about-lead">
-              Sauceful started at our own kitchen table — two fussy eaters, two
-              tired parents, and a fridge that never quite added up to dinner. So
-              we built the planner we wished existed.
+              Sauceful started at our own kitchen table — long days, tired
+              evenings, and a fridge that never quite added up to dinner. So we
+              built the planner we always wished existed.
             </p>
           </div>
         </div>
@@ -79,9 +79,9 @@ export default function About() {
         <div className="story">
           <div className="story-col">
             <p>
-              Every week began the same way: a vague plan, a panic shop, and a
-              child quietly removing the one ingredient we forgot they hated. We
-              were wasting food, money and patience in roughly equal measure.
+              Every week began the same way: a vague plan, a panic shop, and half
+              a trolley of good intentions we never got round to cooking. We were
+              wasting food, money and patience in roughly equal measure.
             </p>
             <p>
               Sauceful is our answer. Tell it who&rsquo;s at your table, your
