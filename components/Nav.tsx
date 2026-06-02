@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import ContactButton from './ContactButton';
 
 export default function Nav() {
   const pathname = usePathname();
@@ -20,9 +21,7 @@ export default function Nav() {
         <div className="nav-links">
           <Link href="/"      className={`nav-link${isHome  ? ' nav-link-active' : ''}`}>Home</Link>
           <Link href="/about" className={`nav-link${isAbout ? ' nav-link-active' : ''}`}>Who we are</Link>
-          <a href="https://mail.google.com/mail/?view=cm&to=hello@sauceful.co.uk" target="_blank" rel="noopener noreferrer" className="btn btn-primary nav-cta">
-            Coming soon
-          </a>
+          <ContactButton label="Coming soon" btnClass="btn btn-primary nav-cta" />
         </div>
       </div>
     </nav>

@@ -1,5 +1,6 @@
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
+import ContactButton from '@/components/ContactButton';
 
 function Device({
   scale,
@@ -168,9 +169,7 @@ export default function About() {
               We&rsquo;re still in the kitchen building Sauceful — and we read
               every message. We&rsquo;d love yours.
             </p>
-            <a href="https://mail.google.com/mail/?view=cm&to=hello@sauceful.co.uk" target="_blank" rel="noopener noreferrer" className="btn btn-peach">
-              Say hello
-            </a>
+            <ContactButton label="Say hello" btnClass="btn btn-peach" />
           </div>
         </div>
 

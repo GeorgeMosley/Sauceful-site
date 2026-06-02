@@ -1,5 +1,6 @@
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
+import ContactButton from '@/components/ContactButton';
 
 /* ── Tick icon ──────────────────────────────────────────── */
 function Tick({ label }: { label: string }) {
@@ -115,9 +116,7 @@ export default function Home() {
                 fridge stares.
               </p>
               <div className="hero-ctas">
-                <a href="https://mail.google.com/mail/?view=cm&to=hello@sauceful.co.uk" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-                  Coming soon — email us
-                </a>
+                <ContactButton label="Coming soon — get in touch" btnClass="btn btn-primary" />
                 <a href="#how" className="btn btn-ghost">
                   See how it works
                 </a>
@@ -255,9 +254,7 @@ export default function Home() {
               We&rsquo;re putting the finishing touches to Sauceful. Drop us a line
               and we&rsquo;ll tell you the moment it&rsquo;s ready.
             </p>
-            <a href="https://mail.google.com/mail/?view=cm&to=hello@sauceful.co.uk" target="_blank" rel="noopener noreferrer" className="btn btn-peach">
-              Coming soon — email us
-            </a>
+            <ContactButton label="Coming soon — get in touch" btnClass="btn btn-peach" />
           </div>
         </div>
 
