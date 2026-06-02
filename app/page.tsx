@@ -248,7 +248,7 @@ export default function Home() {
               coming soon!
             </div>
             <h2 className="cta-title">
-              Dinner, sorted.<br />
+              Dinner, handled.<br />
               Almost <span className="marker">here.</span>
             </h2>
             <p className="cta-sub">
