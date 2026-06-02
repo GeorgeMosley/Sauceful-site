@@ -163,7 +163,7 @@ export default function Home() {
             <div className="section-head">
               <span className="eyebrow">★ How it works</span>
               <h2 className="h2">
-                Blank week to <span className="marker">sorted</span><br />
+                Blank week to <span className="marker">dinner handled</span><br />
                 in three steps.
               </h2>
             </div>
