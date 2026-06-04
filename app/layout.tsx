@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import FloatingEmojis from '@/components/FloatingEmojis';
 import ScrollEffects from '@/components/ScrollEffects';
+import { Analytics } from '@vercel/analytics/next';
 
 export const metadata: Metadata = {
   title: 'Sauceful — The secret sauce of dinner planning',
@@ -23,6 +24,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <FloatingEmojis />
         <ScrollEffects />
         {children}
+        <Analytics />
       </body>
     </html>
   );
