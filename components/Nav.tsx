@@ -21,7 +21,7 @@ export default function Nav() {
         <div className="nav-links">
           <Link href="/"      className={`nav-link${isHome  ? ' nav-link-active' : ''}`}>Home</Link>
           <Link href="/about" className={`nav-link${isAbout ? ' nav-link-active' : ''}`}>Who we are</Link>
-          <ContactButton label="Coming soon" btnClass="btn btn-primary nav-cta" />
+          <ContactButton label="Join the waitlist" btnClass="btn btn-primary nav-cta" variant="waitlist" />
         </div>
       </div>
     </nav>

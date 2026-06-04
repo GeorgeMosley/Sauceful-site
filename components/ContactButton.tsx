@@ -6,14 +6,23 @@ import { createPortal } from 'react-dom';
 interface Props {
   label: string;
   btnClass?: string;
+  /** 'waitlist' shows name + email only and sends a signup subject line.
+   *  'contact'  (default) shows the full name / email / message form. */
+  variant?: 'waitlist' | 'contact';
 }
 
-export default function ContactButton({ label, btnClass = 'btn btn-primary' }: Props) {
-  const [isOpen, setIsOpen]   = useState(false);
-  const [name, setName]       = useState('');
-  const [email, setEmail]     = useState('');
-  const [message, setMessage] = useState('');
-  const [status, setStatus]   = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
+export default function ContactButton({
+  label,
+  btnClass = 'btn btn-primary',
+  variant = 'contact',
+}: Props) {
+  const [isOpen,   setIsOpen]   = useState(false);
+  const [name,     setName]     = useState('');
+  const [email,    setEmail]    = useState('');
+  const [message,  setMessage]  = useState('');
+  const [status,   setStatus]   = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
+
+  const isWaitlist = variant === 'waitlist';
 
   const open  = () => setIsOpen(true);
   const close = () => {
@@ -31,8 +40,10 @@ export default function ContactButton({ label, btnClass = 'btn btn-primary' }: P
         body: JSON.stringify({
           name,
           email,
-          message,
-          _subject: `Message from ${name} via sauceful.co.uk`,
+          ...(isWaitlist ? {} : { message }),
+          _subject: isWaitlist
+            ? `Waiting list signup — ${name}`
+            : `Message from ${name} via sauceful.co.uk`,
           _captcha: 'false',
         }),
       });
@@ -53,19 +64,45 @@ export default function ContactButton({ label, btnClass = 'btn btn-primary' }: P
 
             {status === 'success' ? (
               <div className="modal-success">
-                <span className="eyebrow">★ Message sent</span>
-                <h2 className="h2">We got it!</h2>
-                <p className="lead-sm" style={{ color: 'var(--c-cocoa-soft)', maxWidth: '28ch', textAlign: 'center' }}>
-                  Thanks for reaching out — we&rsquo;ll be in touch soon.
-                </p>
+                {isWaitlist ? (
+                  <>
+                    <span style={{ fontSize: 44, lineHeight: 1 }}>🎉</span>
+                    <span className="eyebrow">★ You&rsquo;re on the list</span>
+                    <h2 className="h2">We&rsquo;ll save you a spot!</h2>
+                    <p className="lead-sm" style={{ color: 'var(--c-cocoa-soft)', maxWidth: '28ch', textAlign: 'center' }}>
+                      We&rsquo;ll drop you a line the moment Sauceful is ready to launch.
+                    </p>
+                  </>
+                ) : (
+                  <>
+                    <span className="eyebrow">★ Message sent</span>
+                    <h2 className="h2">We got it!</h2>
+                    <p className="lead-sm" style={{ color: 'var(--c-cocoa-soft)', maxWidth: '28ch', textAlign: 'center' }}>
+                      Thanks for reaching out — we&rsquo;ll be in touch soon.
+                    </p>
+                  </>
+                )}
                 <button className="btn btn-primary" onClick={close} style={{ marginTop: 12 }}>
                   Close
                 </button>
               </div>
             ) : (
               <>
-                <span className="eyebrow">★ Say hello</span>
-                <h2 className="h2" style={{ marginBottom: 28 }}>Drop us a message</h2>
+                {isWaitlist ? (
+                  <>
+                    <span className="eyebrow">★ Early access</span>
+                    <h2 className="h2" style={{ marginBottom: 8 }}>Join the waiting list</h2>
+                    <p className="lead-sm" style={{ color: 'var(--c-cocoa-soft)', marginBottom: 28 }}>
+                      Be first to know when Sauceful launches — we&rsquo;ll save you a spot.
+                    </p>
+                  </>
+                ) : (
+                  <>
+                    <span className="eyebrow">★ Say hello</span>
+                    <h2 className="h2" style={{ marginBottom: 28 }}>Drop us a message</h2>
+                  </>
+                )}
+
                 <form onSubmit={handleSubmit}>
                   <div className="form-group">
                     <label className="form-label">Your name</label>
@@ -89,16 +126,18 @@ export default function ContactButton({ label, btnClass = 'btn btn-primary' }: P
                       onChange={e => setEmail(e.target.value)}
                     />
                   </div>
-                  <div className="form-group">
-                    <label className="form-label">Message</label>
-                    <textarea
-                      className="form-textarea"
-                      required
-                      placeholder="Tell us what you think, or just say hi..."
-                      value={message}
-                      onChange={e => setMessage(e.target.value)}
-                    />
-                  </div>
+                  {!isWaitlist && (
+                    <div className="form-group">
+                      <label className="form-label">Message</label>
+                      <textarea
+                        className="form-textarea"
+                        required
+                        placeholder="Tell us what you think, or just say hi..."
+                        value={message}
+                        onChange={e => setMessage(e.target.value)}
+                      />
+                    </div>
+                  )}
                   {status === 'error' && (
                     <p className="form-error">Something went wrong — please try again.</p>
                   )}
@@ -107,7 +146,9 @@ export default function ContactButton({ label, btnClass = 'btn btn-primary' }: P
                     type="submit"
                     disabled={status === 'sending'}
                   >
-                    {status === 'sending' ? 'Sending…' : 'Send message'}
+                    {status === 'sending'
+                      ? 'Sending…'
+                      : isWaitlist ? 'Save my spot →' : 'Send message'}
                   </button>
                 </form>
               </>

@@ -118,7 +118,7 @@ export default function Home() {
                 fridge stares.
               </p>
               <div className="hero-ctas">
-                <ContactButton label="Coming soon — get in touch" btnClass="btn btn-primary" />
+                <ContactButton label="Join the waiting list" btnClass="btn btn-primary" variant="waitlist" />
                 <a href="#how" className="btn btn-ghost">
                   See how it works
                 </a>
@@ -240,7 +240,7 @@ export default function Home() {
               className="sticker sticker-white"
               style={{ top: -18, right: 60, transform: 'rotate(-3deg)', '--bob-dur': '5s', '--bob-delay': '0.5s' } as React.CSSProperties}
             >
-              coming soon!
+              sign up! 🍊
             </div>
             <h2 className="cta-title">
               Dinner, handled.<br />
@@ -250,7 +250,7 @@ export default function Home() {
               We&rsquo;re putting the finishing touches to Sauceful. Drop us a line
               and we&rsquo;ll tell you the moment it&rsquo;s ready.
             </p>
-            <ContactButton label="Coming soon — get in touch" btnClass="btn btn-peach" />
+            <ContactButton label="Join the waiting list" btnClass="btn btn-peach" variant="waitlist" />
           </div>
         </div>
 
