@@ -516,7 +516,7 @@ em {
   align-items: start; /* pin phone to top of row instead of centering it */
 }
 .feature-flip .feature-content { order: 1; }
-.feature-flip .feature-visual  { order: 2; }
+.feature-flip .feature-visual  { order: 2; align-self: start; }
 
 .feature-headline { margin-bottom: 18px; }
 .feature-lead     { margin-bottom: 28px; }

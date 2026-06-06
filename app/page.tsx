@@ -254,8 +254,10 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Phone visual — appears right on desktop via CSS order */}
-            <div className="feature-visual" data-phone-par="0.05">
+            {/* Phone visual — appears right on desktop via CSS order.
+                No data-phone-par: this section is far down the page so
+                translateY(scrollY * factor) would push it way too low. */}
+            <div className="feature-visual">
               <Device
                 scale={0.64}
                 tilt="right"
