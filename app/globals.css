@@ -513,6 +513,7 @@ em {
 /* Flip variant — text left, phone right */
 .feature-flip {
   grid-template-columns: 1.1fr 0.9fr; /* text gets the wider column */
+  align-items: start; /* pin phone to top of row instead of centering it */
 }
 .feature-flip .feature-content { order: 1; }
 .feature-flip .feature-visual  { order: 2; }
