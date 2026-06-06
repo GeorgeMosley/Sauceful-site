@@ -27,12 +27,17 @@ export const metadata: Metadata = {
     google: 'QP5p9EKHUGuTniZOs9_TnS35gE_ioOO5NBW4LOjgQ-E',
   },
   keywords: [
+    'AI meal planner',
     'meal planning app',
     'dinner planner',
     'weekly meal plan',
     'family meal planner',
+    'personalised meal planner',
+    'meal planner for fussy eaters',
+    'automatic shopping list',
     'personalised recipes',
-    'shopping list app',
+    'dinner planning app',
+    'weekly dinner planner',
     'sauceful',
   ],
 };

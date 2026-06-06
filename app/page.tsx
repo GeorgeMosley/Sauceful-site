@@ -73,10 +73,47 @@ function MarqueeRow() {
   );
 }
 
+/* ── Page-level metadata (overrides layout defaults for home) ── */
+export const metadata = {
+  title: 'Sauceful — Personalised Meal Planner & Weekly Dinner Plan App',
+  description: 'Sauceful is the AI meal planning app that builds personalised weekly dinner plans around your family\'s tastes, budget and fussy eaters. Automatic shopping list included. Join the waitlist.',
+};
+
+/* ── Structured data (JSON-LD) ──────────────────────────────── */
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebSite',
+      name: 'Sauceful',
+      url: 'https://www.sauceful.co.uk',
+    },
+    {
+      '@type': 'SoftwareApplication',
+      name: 'Sauceful',
+      applicationCategory: 'LifestyleApplication',
+      operatingSystem: 'iOS, Android',
+      description:
+        'AI-powered meal planning app that builds personalised weekly dinner plans for families. Set your budget, household size, likes and dislikes — get a full week of dinners and an automatic shopping list in 30 seconds.',
+      offers: {
+        '@type': 'Offer',
+        price: '0',
+        priceCurrency: 'GBP',
+      },
+      url: 'https://www.sauceful.co.uk',
+    },
+  ],
+};
+
 /* ── Home page ───────────────────────────────────────────── */
 export default function Home() {
   return (
     <>
+      {/* JSON-LD structured data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Nav />
       <main>
 
@@ -107,15 +144,15 @@ export default function Home() {
           <div className="hero">
             {/* Text */}
             <div className="hero-content">
-              <span className="eyebrow">★ Dinner planning for real households</span>
+              <span className="eyebrow">★ The meal planning app for real families</span>
               <h1 className="display hero-headline">
                 The secret <em>sauce</em><br />
                 of dinner planning
               </h1>
               <p className="lead hero-lead">
-                Personalised weekly dinner plans, built around the food your
-                household actually loves. Less waste, less faff, no more 5pm
-                fridge stares.
+                Sauceful is the AI meal planner that builds personalised weekly
+                dinner plans around the food your household actually loves.
+                Less waste, less faff, no more 5pm fridge stares.
               </p>
               <div className="hero-ctas">
                 <ContactButton label="Join the waiting list" btnClass="btn btn-primary" variant="waitlist" />
@@ -149,7 +186,7 @@ export default function Home() {
                 scale={0.66}
                 tilt="right"
                 src="/app-screens/week.jpg"
-                alt="Sauceful weekly meal planner"
+                alt="Sauceful meal planning app showing a personalised weekly dinner plan"
               />
             </div>
           </div>
@@ -184,7 +221,7 @@ export default function Home() {
                 <div className="step-num">2</div>
                 <p className="step-title">Dinner? Handled. In 30 seconds.</p>
                 <p className="step-body">
-                  A full week of home-cooked meals, planned before your kettle boils.
+                  Your full weekly meal plan, built before your kettle boils.
                 </p>
               </div>
 
@@ -210,7 +247,7 @@ export default function Home() {
                 scale={0.64}
                 tilt="left"
                 src="/app-screens/recipe.jpg"
-                alt="Sauceful recipe detail"
+                alt="Sauceful meal planner recipe detail with ingredients and cooking steps"
               />
             </div>
 
@@ -263,7 +300,7 @@ export default function Home() {
                 scale={0.64}
                 tilt="right"
                 src="/app-screens/chef.jpg"
-                alt="Sauceful Ask the Chef screen"
+                alt="Sauceful AI meal planner Ask the Chef feature — get dinner ideas from fridge ingredients"
               />
             </div>
           </div>
