@@ -164,7 +164,7 @@ export default function Home() {
             <div className="section-head" data-reveal>
               <span className="eyebrow">★ How it works</span>
               <h2 className="h2">
-                Blank week to <span className="marker">handled</span><br />
+                No idea to <span className="marker">handled</span><br />
                 in three steps.
               </h2>
             </div>
