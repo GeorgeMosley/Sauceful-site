@@ -270,7 +270,7 @@ export default function Home() {
         </div>
 
         {/* ── CTA BAND ─────────────────────────────────── */}
-        <div className="cta-band-wrap">
+        <div className="cta-band-wrap" style={{ paddingTop: 92 }}>
           <div className="cta-band" data-reveal>
             <div
               className="sticker sticker-white"
