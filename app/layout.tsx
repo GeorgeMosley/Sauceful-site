@@ -23,6 +23,9 @@ export const metadata: Metadata = {
     title: 'Sauceful — The secret sauce of dinner planning',
     description: 'Personalised weekly dinner plans built around your household\'s tastes. Less waste, less faff, no more 5pm fridge stares.',
   },
+  verification: {
+    google: 'QP5p9EKHUGuTniZOs9_TnS35gE_ioOO5NBW4LOjgQ-E',
+  },
   keywords: [
     'meal planning app',
     'dinner planner',
