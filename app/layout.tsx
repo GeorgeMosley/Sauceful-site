@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import FloatingEmojis from '@/components/FloatingEmojis';
 import ScrollEffects from '@/components/ScrollEffects';
 import { Analytics } from '@vercel/analytics/next';
 
@@ -21,7 +20,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body>
-        <FloatingEmojis />
         <ScrollEffects />
         {children}
         <Analytics />
