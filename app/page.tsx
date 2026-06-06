@@ -203,8 +203,9 @@ export default function Home() {
         {/* ── FEATURE ──────────────────────────────────── */}
         <div>
           <div className="feature">
-            {/* Phone visual */}
-            <div className="feature-visual" data-phone-par="0.05">
+            {/* Phone visual — no data-phone-par, parallax drift at this scroll
+                depth would push the phone down vs the text */}
+            <div className="feature-visual">
               <Device
                 scale={0.64}
                 tilt="left"

@@ -506,6 +506,7 @@ em {
   display: flex;
   justify-content: center;
   overflow: visible;
+  align-self: start; /* pin phone to top of text column, not centred against it */
 }
 
 .feature-content {}
