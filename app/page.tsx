@@ -233,6 +233,39 @@ export default function Home() {
           </div>
         </div>
 
+        {/* ── FEATURE 2 – ASK THE CHEF ────────────────── */}
+        <div className="band-peach">
+          <div className="feature feature-flip">
+            {/* Text — appears left on desktop via CSS order */}
+            <div className="feature-content" data-reveal>
+              <span className="eyebrow">★ Ask the chef</span>
+              <h2 className="h2 feature-headline">
+                Random stuff<br />
+                <span className="marker">in the fridge?</span>
+              </h2>
+              <p className="lead lead-sm feature-lead">
+                Tell the app what you&rsquo;ve got to hand and it&rsquo;ll find
+                something delicious to make with it — no supermarket run needed.
+              </p>
+              <div className="ticks">
+                <Tick label="Works with whatever's in your kitchen" />
+                <Tick label="Turns leftovers into proper dinners" />
+                <Tick label="One less trip to the shop" />
+              </div>
+            </div>
+
+            {/* Phone visual — appears right on desktop via CSS order */}
+            <div className="feature-visual" data-phone-par="0.05">
+              <Device
+                scale={0.64}
+                tilt="right"
+                src="/app-screens/chef.jpg"
+                alt="Sauceful Ask the Chef screen"
+              />
+            </div>
+          </div>
+        </div>
+
         {/* ── CTA BAND ─────────────────────────────────── */}
         <div className="cta-band-wrap">
           <div className="cta-band" data-reveal>

@@ -510,6 +510,13 @@ em {
 
 .feature-content {}
 
+/* Flip variant — text left, phone right */
+.feature-flip {
+  grid-template-columns: 1.1fr 0.9fr; /* text gets the wider column */
+}
+.feature-flip .feature-content { order: 1; }
+.feature-flip .feature-visual  { order: 2; }
+
 .feature-headline { margin-bottom: 18px; }
 .feature-lead     { margin-bottom: 28px; }
 
@@ -1049,6 +1056,11 @@ em {
   }
   .feature-visual { margin-bottom: 40px; justify-content: center; }
   .ticks          { align-items: flex-start; text-align: left; }
+
+  /* Reset flip order on mobile — phone above text, same as regular feature */
+  .feature-flip { grid-template-columns: 1fr; }
+  .feature-flip .feature-content { order: 2; }
+  .feature-flip .feature-visual  { order: 1; }
 
   .story {
     grid-template-columns: 1fr;
