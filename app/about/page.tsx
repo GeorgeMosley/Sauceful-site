@@ -103,8 +103,8 @@ export default function About() {
             <Device
               scale={0.60}
               tilt="right"
-              src="/app-screens/week.png"
-              alt="Sauceful app showing a week of planned dinners"
+              src="/app-screens/onboard.jpg"
+              alt="Sauceful app welcome screen"
             />
           </div>
         </div>

@@ -148,7 +148,7 @@ export default function Home() {
               <Device
                 scale={0.66}
                 tilt="right"
-                src="/app-screens/week.png"
+                src="/app-screens/week.jpg"
                 alt="Sauceful weekly meal planner"
               />
             </div>
@@ -208,7 +208,7 @@ export default function Home() {
               <Device
                 scale={0.64}
                 tilt="left"
-                src="/app-screens/recipe.png"
+                src="/app-screens/recipe.jpg"
                 alt="Sauceful recipe detail"
               />
             </div>
