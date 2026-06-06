@@ -5,7 +5,33 @@ import { Analytics } from '@vercel/analytics/next';
 
 export const metadata: Metadata = {
   title: 'Sauceful — The secret sauce of dinner planning',
-  description: 'A week of meals your family actually wants — planned around your tastes, built in 30 seconds.',
+  description: 'Personalised weekly dinner plans built around your household\'s tastes. Less waste, less faff, no more 5pm fridge stares. Join the waiting list.',
+  metadataBase: new URL('https://www.sauceful.co.uk'),
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: 'Sauceful — The secret sauce of dinner planning',
+    description: 'Personalised weekly dinner plans built around your household\'s tastes. Less waste, less faff, no more 5pm fridge stares.',
+    url: 'https://www.sauceful.co.uk',
+    siteName: 'Sauceful',
+    locale: 'en_GB',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Sauceful — The secret sauce of dinner planning',
+    description: 'Personalised weekly dinner plans built around your household\'s tastes. Less waste, less faff, no more 5pm fridge stares.',
+  },
+  keywords: [
+    'meal planning app',
+    'dinner planner',
+    'weekly meal plan',
+    'family meal planner',
+    'personalised recipes',
+    'shopping list app',
+    'sauceful',
+  ],
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

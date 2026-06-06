@@ -35,7 +35,15 @@ function Device({
 
 export const metadata = {
   title: 'Who we are — Sauceful',
-  description: 'We got tired of the 5pm panic. So we built the dinner planner we always wished existed.',
+  description: 'We got tired of the 5pm panic. So we built the dinner planner we always wished existed — personalised weekly meal plans for real households.',
+  alternates: {
+    canonical: '/about',
+  },
+  openGraph: {
+    title: 'Who we are — Sauceful',
+    description: 'We got tired of the 5pm panic. So we built the dinner planner we always wished existed.',
+    url: 'https://www.sauceful.co.uk/about',
+  },
 };
 
 export default function About() {
