@@ -19,6 +19,9 @@ export default function Footer() {
           <p className="footer-copy">© 2026 Sauceful. Made for hungry families.</p>
         </div>
       </div>
+      <p className="footer-disclaimer">
+        Sauceful is a meal planning tool and is not considered to give medical, dietetic, or professional nutritional advice.
+      </p>
     </footer>
   );
 }
