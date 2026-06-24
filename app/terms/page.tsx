@@ -15,20 +15,21 @@ export default function Terms() {
           <div className="legal-card pop">
             <span className="eyebrow">★ Legal</span>
             <h1 className="h2 legal-title">Terms &amp; Conditions</h1>
-            <p className="legal-updated">Last updated June 01, 2026</p>
+            <p className="legal-updated">Last updated 24th June 2026</p>
             <p className="legal-note">
-              We are Sauceful Ltd (&lsquo;Company&rsquo;, &lsquo;we&rsquo;, &lsquo;us&rsquo;, or &lsquo;our&rsquo;).
-              We operate the mobile application Sauceful, as well as any other related products and services that
-              refer or link to these legal terms (collectively, the &lsquo;Services&rsquo;).
-              You can contact us at{' '}
+              These Terms &amp; Conditions (&lsquo;Terms&rsquo;) form a legally binding agreement between you and
+              Sauceful Ltd (&lsquo;we&rsquo;, &lsquo;us&rsquo;, or &lsquo;our&rsquo;) governing your use of the
+              Sauceful mobile application and related services (the &lsquo;Services&rsquo;). By creating an account,
+              selecting an acceptance checkbox, starting a subscription, or otherwise using the Services, you agree
+              to these Terms. We may record the version of the Terms accepted and the date and time of acceptance.
+              If you do not agree, please do not use the Services. You can contact us at{' '}
               <a href="https://mail.google.com/mail/?view=cm&to=hello@sauceful.co.uk" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--c-peach-dk)' }}>hello@sauceful.co.uk</a>.
             </p>
             <p className="legal-note" style={{ marginTop: -12 }}>
-              These Legal Terms constitute a legally binding agreement between you and Sauceful Ltd concerning
-              your access to and use of the Services. By accessing the Services, you have read, understood, and
-              agreed to be bound by all of these Legal Terms. <strong>If you do not agree with all of these Legal
-              Terms, then you are expressly prohibited from using the Services and you must discontinue use
-              immediately.</strong>
+              <strong>Your statutory rights.</strong> Nothing in these Terms affects your legal rights as a consumer
+              under UK law, including the Consumer Rights Act 2015 and the Consumer Contracts (Information,
+              Cancellation and Additional Charges) Regulations 2013. If anything in these Terms conflicts with those
+              rights, your statutory rights prevail.
             </p>
             <hr className="legal-divider" />
 
@@ -36,189 +37,140 @@ export default function Terms() {
 
               <div className="legal-toc">
                 {[
-                  'Our services',
-                  'Intellectual property rights',
-                  'User representations',
-                  'User registration',
-                  'Purchases and payment',
-                  'Subscriptions',
-                  'Prohibited activities',
-                  'User generated contributions',
-                  'Contribution licence',
-                  'Mobile application licence',
-                  'Services management',
-                  'Privacy policy',
-                  'Term and termination',
-                  'Modifications and interruptions',
-                  'Governing law',
-                  'Dispute resolution',
-                  'Corrections',
-                  'Disclaimer',
-                  'Limitations of liability',
-                  'Indemnification',
-                  'User data',
-                  'Electronic communications, transactions, and signatures',
-                  'Miscellaneous',
+                  'About our Services',
+                  'Eligibility and your account',
                   'Dietary safety and preferences',
+                  'How the AI works and its limitations',
+                  'Subscriptions, free trial, payment and cancellation',
+                  'Acceptable use',
+                  'Intellectual property',
+                  'App store terms',
+                  'Availability and changes to the Services',
+                  'Suspension and termination',
+                  'Our responsibility to you',
+                  'Your responsibilities to us (indemnity)',
+                  'Your data and backups',
+                  'Resolving disputes',
+                  'General',
                   'Contact us',
                 ].map((item, i) => (
-                  <p className="legal-toc-item" key={i}>{i + 1}. {item.charAt(0).toUpperCase() + item.slice(1)}</p>
+                  <p className="legal-toc-item" key={i}>{i + 1}. {item}</p>
                 ))}
               </div>
 
               <div className="legal-section">
-                <p className="legal-section-title">1. Our services</p>
-                <p>The information provided when using the Services is not intended for distribution to or use by any person or entity in any jurisdiction or country where such distribution or use would be contrary to law or regulation or which would subject us to any registration requirement within such jurisdiction or country. Those persons who choose to access the Services from other locations do so on their own initiative and are solely responsible for compliance with local laws, if and to the extent local laws are applicable.</p>
-                <p>Sauceful is a UK-based AI-powered meal planning mobile application designed for adult users — primarily parents and household managers — who want personalised weekly dinner suggestions for their household. The app is intended solely for adults aged 18 and over.</p>
+                <p className="legal-section-title">1. About our Services</p>
+                <p>Sauceful is a UK-based, AI-powered meal planning application for adults — primarily parents and household managers — who want personalised weekly dinner suggestions and, where available, integrated supermarket shopping lists or baskets. The Services are intended solely for users aged 18 and over and for personal, non-commercial use.</p>
+                <p>Unless expressly stated otherwise, the Services are intended for use in the United Kingdom only and are not currently made available or marketed in the European Economic Area. If you access the Services from outside the United Kingdom, you do so on your own initiative and are responsible for compliance with local laws. We do not represent that the Services are appropriate or available in every jurisdiction.</p>
               </div>
 
               <div className="legal-section">
-                <p className="legal-section-title">2. Intellectual property rights</p>
-                <p>We are the owner or the licensee of all intellectual property rights in our Services, including all source code, databases, functionality, software, website designs, audio, video, text, photographs, and graphics in the Services (collectively, the &lsquo;Content&rsquo;), as well as the trademarks, service marks, and logos contained therein (the &lsquo;Marks&rsquo;). Our Content and Marks are protected by copyright and trademark laws and treaties around the world.</p>
-                <p>Subject to your compliance with these Legal Terms, we grant you a non-exclusive, non-transferable, revocable licence to access the Services solely for your personal, non-commercial use. No part of the Services and no Content or Marks may be copied, reproduced, aggregated, republished, uploaded, posted, publicly displayed, encoded, translated, transmitted, distributed, sold, licensed, or otherwise exploited for any commercial purpose whatsoever, without our express prior written permission.</p>
-                <p>Any breach of these Intellectual Property Rights will constitute a material breach of our Legal Terms and your right to use our Services will terminate immediately.</p>
+                <p className="legal-section-title">2. Eligibility and your account</p>
+                <p>By using the Services you confirm that you are at least 18, that the information you give us is accurate and kept up to date, and that you will use the Services only for lawful, personal purposes. You are responsible for keeping your login details confidential and for activity under your account. Tell us promptly if you think your account has been compromised.</p>
               </div>
 
               <div className="legal-section">
-                <p className="legal-section-title">3. User representations</p>
-                <p>By using the Services, you represent and warrant that: (1) all registration information you submit will be true, accurate, current, and complete; (2) you will maintain the accuracy of such information; (3) you have the legal capacity and agree to comply with these Legal Terms; (4) you are not a minor in the jurisdiction in which you reside; (5) you will not access the Services through automated or non-human means; (6) you will not use the Services for any illegal or unauthorised purpose; and (7) your use of the Services will not violate any applicable law or regulation.</p>
-                <p>If you provide any information that is untrue, inaccurate, not current, or incomplete, we have the right to suspend or terminate your account and refuse any and all current or future use of the Services.</p>
-              </div>
-
-              <div className="legal-section">
-                <p className="legal-section-title">4. User registration</p>
-                <p>You may be required to register to use the Services. You agree to keep your password confidential and will be responsible for all use of your account and password. We reserve the right to remove, reclaim, or change a username you select if we determine, in our sole discretion, that such username is inappropriate, obscene, or otherwise objectionable.</p>
-              </div>
-
-              <div className="legal-section">
-                <p className="legal-section-title">5. Purchases and payment</p>
-                <p>We accept the following forms of payment: Visa, Mastercard, American Express.</p>
-                <p>You agree to provide current, complete, and accurate purchase and account information for all purchases made via the Services. All payments shall be in Pound Sterling. We may change prices at any time. You authorise us to charge your chosen payment provider for any such amounts upon placing your order.</p>
-                <p>We reserve the right to refuse any order placed through the Services. We may, in our sole discretion, limit or cancel quantities purchased per person, per household, or per order.</p>
-              </div>
-
-              <div className="legal-section">
-                <p className="legal-section-title">6. Subscriptions</p>
-                <p><strong>Billing and Renewal.</strong> Your subscription will continue and automatically renew unless cancelled. You consent to our charging your payment method on a recurring basis without requiring your prior approval for each recurring charge, until such time as you cancel.</p>
-                <p><strong>Free Trial.</strong> We offer a 30-day free trial to new users who register with the Services. The account will be charged according to the user&rsquo;s chosen subscription at the end of the free trial.</p>
-                <p><strong>Cancellation.</strong> All purchases are non-refundable. You can cancel your subscription at any time by logging into your account. Your cancellation will take effect at the end of the current paid term. If you have any questions or are unsatisfied with our Services, please email us at <a href="https://mail.google.com/mail/?view=cm&to=hello@sauceful.co.uk" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--c-peach-dk)' }}>hello@sauceful.co.uk</a>.</p>
-                <p><strong>Fee Changes.</strong> We may, from time to time, make changes to the subscription fee and will communicate any price changes to you in accordance with applicable law.</p>
-              </div>
-
-              <div className="legal-section">
-                <p className="legal-section-title">7. Prohibited activities</p>
-                <p>You may not access or use the Services for any purpose other than that for which we make the Services available. As a user of the Services, you agree not to:</p>
+                <p className="legal-section-title">3. Dietary safety and preferences</p>
+                <p>Sauceful is not an allergy-management or medical tool. You must check every meal, ingredient, recipe, product, label, substitution and shopping-list item yourself before buying, preparing, serving, or eating it — especially where allergies, intolerances, children, pregnancy, medical conditions, or medical dietary needs are involved.</p>
+                <p>Sauceful generates suggestions using artificial intelligence based on the preferences and requirements you enter. We distinguish between:</p>
                 <ul>
-                  <li>Systematically retrieve data or other content from the Services to create or compile a collection, compilation, database, or directory without written permission from us.</li>
-                  <li>Trick, defraud, or mislead us and other users, especially in any attempt to learn sensitive account information such as user passwords.</li>
-                  <li>Circumvent, disable, or otherwise interfere with security-related features of the Services.</li>
-                  <li>Use the Services in a manner inconsistent with any applicable laws or regulations.</li>
-                  <li>Upload or transmit viruses, Trojan horses, or other material that interferes with any party&rsquo;s uninterrupted use and enjoyment of the Services.</li>
-                  <li>Engage in any automated use of the system, such as using scripts to send comments or messages, or using data mining, robots, or similar data gathering tools.</li>
-                  <li>Attempt to impersonate another user or person or use the username of another user.</li>
-                  <li>Use the Services as part of any effort to compete with us or otherwise use the Services for any revenue-generating endeavour or commercial enterprise.</li>
-                  <li>Sell or otherwise transfer your profile.</li>
+                  <li>Preferences (likes and dislikes) — used to tailor suggestions to your household&rsquo;s tastes; and</li>
+                  <li>Allergies, intolerances, and medical dietary requirements — which are matters of safety, not taste.</li>
                 </ul>
+                <p>Although we design the Service to take account of the information you provide, the AI can and sometimes will make mistakes — including suggesting an ingredient that conflicts with a stated allergy or requirement. You must therefore always independently verify ingredients, recipes, product labels, allergens, quantities, cooking instructions and substitutions before relying on them, and never rely solely on Sauceful where dietary safety is critical.</p>
+                <p><strong>Food safety and preparation.</strong> We do not provide food-hygiene or food-safety guidance. You are responsible for safely storing, handling, and cooking food (for example, cooking meat thoroughly and observing use-by dates).</p>
+                <p><strong>Supermarket integration and substitutions.</strong> If and when the Services let you create a generic shopping list for your recipes, that list is not brand-specific and does not select, match, link to or supply supermarket products. If you choose to buy items from a third-party supermarket, that supermarket — not Sauceful — supplies the products. Supermarkets may substitute items, change ingredients, or update product information, and a substituted product may contain allergens the original did not. You must check every product and its label, including any substitutions, before purchase and consumption. Your relationship with the supermarket is governed by that supermarket&rsquo;s own terms.</p>
+                <p><strong>Not medical or nutritional advice.</strong> Sauceful does not provide medical, nutritional, or dietary advice. If you or anyone in your household has a serious allergy or a medical condition requiring dietary management, consult a qualified medical professional or registered dietitian.</p>
               </div>
 
               <div className="legal-section">
-                <p className="legal-section-title">8. User generated contributions</p>
-                <p>The Services does not currently offer users the ability to submit or post content. We may provide you with the opportunity to create, submit, post, display, transmit, perform, publish, distribute, or broadcast content and materials to us or on the Services in the future. Any Contributions you transmit may be treated in accordance with the Services&rsquo; Privacy Policy.</p>
+                <p className="legal-section-title">4. How the AI works and its limitations</p>
+                <p>Meal suggestions are generated automatically by AI and are recommendations only. They are not guaranteed to be accurate, complete, suitable, nutritionally balanced, or free of errors. You remain in control: you decide what to buy, cook, and eat. We provide some AI features through third-party providers (including Anthropic); your inputs and outputs are processed as described in our Privacy Policy, and are not used to train AI models. You must not use the AI features in any way that breaches a provider&rsquo;s terms or applicable law. We may update the AI providers we use from time to time, and material changes to data use will be handled in accordance with our Privacy Policy.</p>
               </div>
 
               <div className="legal-section">
-                <p className="legal-section-title">9. Contribution licence</p>
-                <p>You and Services agree that we may access, store, process, and use any information and personal data that you provide following the terms of the Privacy Policy and your choices.</p>
-                <p>By submitting suggestions or other feedback regarding the Services, you agree that we can use and share such feedback for any purpose without compensation to you. You retain full ownership of all of your Contributions and any intellectual property rights or other proprietary rights associated with your Contributions.</p>
+                <p className="legal-section-title">5. Subscriptions, free trial, payment and cancellation</p>
+                <p><strong>Free trial.</strong> We may offer a 14-day free trial to new users. Unless you cancel before the trial ends, your chosen paid subscription will begin automatically when the trial finishes, and we will charge your payment method. Our subscription plans are priced at £4.99 per month or £49.99 per year (saving over 16%). You should review the subscription details, free-trial period, renewal price and cancellation route shown in the Apple App Store or Google Play checkout before confirming purchase.</p>
+                <p><strong>Billing and renewal.</strong> Subscriptions renew automatically for successive periods until cancelled. When you subscribe, your payment is taken and managed by the Apple App Store or Google Play through your existing store account, and renews automatically through that store until you cancel. All payments are in Pounds Sterling. We do not process or store your card details.</p>
+                <p><strong>Reminders and changes.</strong> Renewal notices, free-trial reminders, cancellations and subscription management are administered through the Apple App Store or Google Play. If the subscription price changes, any required app-store consent or approval will be handled through the relevant store, and the new price will apply from the next applicable billing period only.</p>
+                <p><strong>14-day cancellation right (cooling-off).</strong> As a consumer, you have the right to cancel within 14 days of starting a paid subscription, without giving a reason, under the Consumer Contracts Regulations 2013. If you purchase a subscription through the Apple App Store or Google Play, payment processing, subscription management, cancellations and refunds are administered by the relevant app-store provider. Cancellation of a subscription will prevent future renewals but will not automatically result in a refund. Any refund requests should be submitted directly to the relevant app-store provider. For support queries, email <a href="https://mail.google.com/mail/?view=cm&to=hello@sauceful.co.uk" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--c-peach-dk)' }}>hello@sauceful.co.uk</a>. To manage or cancel your subscription, use your Apple App Store or Google Play account settings.</p>
+                <p><strong>Cancelling after the cooling-off period.</strong> You can cancel at any time through your Apple App Store or Google Play account settings (subscriptions bought through an app store can only be cancelled there, not within the app itself). Cancellation takes effect at the end of your current paid period, and you keep access until then. Beyond the statutory rights described here, payments already made for a current period are generally non-refundable — but this does not affect your right to a refund where the Service was faulty, not as described, or not provided with reasonable care and skill under the Consumer Rights Act 2015. If you are unhappy with the Services, please contact us. Because purchases are made through the Apple App Store or Google Play, any refund is requested from and issued by Apple or Google under their policies; where we agree a refund is due, we will help you arrange it with the relevant store.</p>
               </div>
 
               <div className="legal-section">
-                <p className="legal-section-title">10. Mobile application licence</p>
-                <p>If you access the Services via the App, then we grant you a revocable, non-exclusive, non-transferable, limited right to install and use the App on wireless electronic devices owned or controlled by you, strictly in accordance with the terms and conditions of this mobile application licence. You shall not: (1) decompile, reverse engineer, disassemble, attempt to derive the source code of, or decrypt the App; (2) make any modification, adaptation, improvement, enhancement, translation, or derivative work from the App; (3) violate any applicable laws, rules, or regulations in connection with your access or use of the App; (4) use the App for any revenue-generating endeavour or commercial enterprise; or (5) use the App to send automated queries to any website or to send any unsolicited commercial email.</p>
-                <p>The foregoing terms apply when you use the App obtained from either the Apple Store or Google Play. The licence granted to you for our App is limited to a non-transferable licence to use the application on a device that utilises the Apple iOS or Android operating systems, as applicable.</p>
+                <p className="legal-section-title">6. Acceptable use</p>
+                <p>You agree not to: use the Services unlawfully or for any commercial or revenue-generating purpose; copy, scrape, data-mine, or systematically extract content; interfere with or attempt to circumvent the security of the Services; upload malicious code; use bots or automated means to access the Services; impersonate others; or transfer or sell your account. You may not reverse engineer, decompile, or disassemble the app, except to the limited extent the law expressly permits and which cannot be excluded by agreement.</p>
               </div>
 
               <div className="legal-section">
-                <p className="legal-section-title">11. Services management</p>
-                <p>We reserve the right, but not the obligation, to: (1) monitor the Services for violations of these Legal Terms; (2) take appropriate legal action against anyone who, in our sole discretion, violates the law or these Legal Terms; (3) in our sole discretion and without limitation, refuse, restrict access to, limit the availability of, or disable any of your Contributions or any portion thereof; and (4) otherwise manage the Services in a manner designed to protect our rights and property and to facilitate the proper functioning of the Services.</p>
+                <p className="legal-section-title">7. Intellectual property</p>
+                <p>We (or our licensors) own all intellectual property rights in the Services, including the software, content, designs, text, graphics, trademarks, and logos. We grant you a personal, non-exclusive, non-transferable, revocable licence to use the Services for your own personal, non-commercial use, in accordance with these Terms. You must not copy, reproduce, republish, distribute, or commercially exploit any part of the Services without our prior written permission.</p>
+                <p>If you send us feedback or suggestions, you agree we may use them freely without obligation to you, while you keep ownership of your own underlying content.</p>
+                <p>AI-generated meal plans, recipes, shopping lists and other outputs are provided for your personal, non-commercial household use only. You may use, save and adapt those outputs for your own household purposes, subject always to these Terms and your responsibility to check dietary suitability, allergens, food safety and product labels.</p>
               </div>
 
               <div className="legal-section">
-                <p className="legal-section-title">12. Privacy policy</p>
-                <p>We care about data privacy and security. Please review our Privacy Policy at <Link href="/privacy" style={{ color: 'var(--c-peach-dk)' }}>sauceful.co.uk/privacy</Link>. By using the Services, you agree to be bound by our Privacy Policy, which is incorporated into these Legal Terms. The Services are hosted in the United Kingdom.</p>
+                <p className="legal-section-title">8. App store terms</p>
+                <p>If you download the app from the Apple App Store or Google Play, your use is also subject to that store&rsquo;s rules. Where required by the relevant store, those store terms apply in addition to these Terms, and the relevant store provider may be a third-party beneficiary entitled to enforce them. If there is any inconsistency between these Terms and mandatory app-store rules relating to payment, cancellation or refunds, the applicable mandatory app-store rule will apply to that extent.</p>
               </div>
 
               <div className="legal-section">
-                <p className="legal-section-title">13. Term and termination</p>
-                <p>These Legal Terms shall remain in full force and effect while you use the Services. We reserve the right to, in our sole discretion and without notice or liability, deny access to and use of the Services (including blocking certain IP addresses), to any person for any reason, including without limitation for breach of any representation, warranty, or covenant contained in these Legal Terms or of any applicable law or regulation. We may terminate your use or participation in the Services or delete your account and any content or information that you posted at any time, without warning, in our sole discretion.</p>
-                <p>If we terminate or suspend your account for any reason, you are prohibited from registering and creating a new account under your name, a fake or borrowed name, or the name of any third party.</p>
+                <p className="legal-section-title">9. Availability and changes to the Services</p>
+                <p>We work to keep the Services available but cannot guarantee they will always be uninterrupted or error-free, and we may change, suspend, withdraw or replace features where we have a valid reason to do so. Where we make significant changes, or withdraw the Services, we will give you reasonable notice where we can, and you may cancel and (where you have pre-paid for a period you can no longer use) receive a pro-rata refund of unused fees.</p>
               </div>
 
               <div className="legal-section">
-                <p className="legal-section-title">14. Modifications and interruptions</p>
-                <p>We reserve the right to change, modify, or remove the contents of the Services at any time or for any reason at our sole discretion without notice. We cannot guarantee the Services will be available at all times. We reserve the right to change, revise, update, suspend, discontinue, or otherwise modify the Services at any time or for any reason without notice to you. You agree that we have no liability whatsoever for any loss, damage, or inconvenience caused by your inability to access or use the Services during any downtime or discontinuance of the Services.</p>
+                <p className="legal-section-title">10. Suspension and termination</p>
+                <p>You can stop using the Services and close your account at any time. We may suspend or end your access if you materially breach these Terms, if required by law, or to protect the Services or other users — giving you notice where it is reasonable to do so. If we end your subscription other than for your breach, we will refund any pre-paid fees for the period after termination.</p>
               </div>
 
               <div className="legal-section">
-                <p className="legal-section-title">15. Governing law</p>
-                <p>These Legal Terms are governed by and interpreted following the laws of the United Kingdom, and the use of the United Nations Convention of Contracts for the International Sales of Goods is expressly excluded. If your habitual residence is in the EU, and you are a consumer, you additionally possess the protection provided to you by obligatory provisions of the law of your country of residence. Sauceful Ltd and yourself both agree to submit to the non-exclusive jurisdiction of the courts of the United Kingdom.</p>
+                <p className="legal-section-title">11. Our responsibility to you</p>
+                <p>We never exclude liability we cannot exclude by law. Nothing in these Terms limits or excludes our liability for death or personal injury caused by our negligence, for fraud or fraudulent misrepresentation, for breach of your statutory rights as a consumer, or for any other liability that cannot be limited or excluded under UK law.</p>
+                <p>Subject to the paragraph above, and because the Services provide automated suggestions that you must check yourself:</p>
+                <ul>
+                  <li>we are responsible for loss or damage you suffer that is a foreseeable result of our breaking these Terms or failing to use reasonable care and skill, but we are not responsible for loss or damage that is not foreseeable;</li>
+                  <li>we are not liable for loss or damage arising from your failure to check ingredients, recipes, labels, or substitutions, or from products supplied by a third-party supermarket;</li>
+                  <li>we are not liable for business losses — the Services are for personal, domestic use only, so we have no liability for loss of profit, business, or business opportunity; and</li>
+                  <li>we are not liable for loss caused by events outside our reasonable control.</li>
+                </ul>
+                <p>Subject always to the carve-outs above, our total liability to you for all claims arising in any 12-month period is limited to the greater of:</p>
+                <ul>
+                  <li>the total fees you paid us in the 12 months before the claim arose, or</li>
+                  <li>£100.</li>
+                </ul>
+                <p>This cap does not apply to any of the liabilities described at the start of this clause, which are never limited.</p>
               </div>
 
               <div className="legal-section">
-                <p className="legal-section-title">16. Dispute resolution</p>
-                <p><strong>Informal Negotiations.</strong> To expedite resolution and control the cost of any dispute, the Parties agree to first attempt to negotiate any Dispute informally for at least thirty (30) days before initiating arbitration. Such informal negotiations commence upon written notice from one Party to the other Party.</p>
-                <p><strong>Binding Arbitration.</strong> Any dispute arising from the relationships between the Parties to these Legal Terms shall be determined by one arbitrator chosen in accordance with the Arbitration and Internal Rules of the European Court of Arbitration. The seat of arbitration shall be London, United Kingdom. The language of the proceedings shall be English. Applicable rules of substantive law shall be the law of the United Kingdom.</p>
-                <p><strong>Restrictions.</strong> The Parties agree that any arbitration shall be limited to the Dispute between the Parties individually. No arbitration shall be joined with any other proceeding, and there is no right or authority for any Dispute to be arbitrated on a class-action basis.</p>
+                <p className="legal-section-title">12. Your responsibilities to us (indemnity)</p>
+                <p>Because the Services are for consumers, this clause is limited. You agree to reimburse us for losses, costs, and reasonable expenses we suffer that are caused by your deliberate misuse of the Services, your fraud, or your breach of these Terms — but only to the extent the loss was not caused or contributed to by us, and excluding anything that would unfairly limit your statutory rights as a consumer.</p>
               </div>
 
               <div className="legal-section">
-                <p className="legal-section-title">17. Corrections</p>
-                <p>There may be information on the Services that contains typographical errors, inaccuracies, or omissions. We reserve the right to correct any errors, inaccuracies, or omissions and to change or update the information on the Services at any time, without prior notice.</p>
+                <p className="legal-section-title">13. Your data and backups</p>
+                <p>We process your personal information as described in our <Link href="/privacy" style={{ color: 'var(--c-peach-dk)' }}>Privacy Policy</Link>, which forms part of these Terms. We take regular backups, but you should keep your own copy of anything important to you. We are responsible for loss or corruption of your data to the extent it results from our failure to use reasonable care and skill.</p>
               </div>
 
               <div className="legal-section">
-                <p className="legal-section-title">18. Disclaimer</p>
-                <p>THE SERVICES ARE PROVIDED ON AN AS-IS AND AS-AVAILABLE BASIS. YOU AGREE THAT YOUR USE OF THE SERVICES WILL BE AT YOUR SOLE RISK. TO THE FULLEST EXTENT PERMITTED BY LAW, WE DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, IN CONNECTION WITH THE SERVICES AND YOUR USE THEREOF, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. WE MAKE NO WARRANTIES OR REPRESENTATIONS ABOUT THE ACCURACY OR COMPLETENESS OF THE SERVICES&rsquo; CONTENT.</p>
+                <p className="legal-section-title">14. Resolving disputes</p>
+                <p><strong>Talk to us first.</strong> If you have a problem, please contact us at <a href="https://mail.google.com/mail/?view=cm&to=hello@sauceful.co.uk" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--c-peach-dk)' }}>hello@sauceful.co.uk</a> so we can try to resolve it quickly and informally.</p>
+                <p><strong>Going to court.</strong> These Terms are governed by the law of England and Wales. As a consumer, you can bring proceedings in the courts of England and Wales, and if you live in Scotland or Northern Ireland you may also bring proceedings in your local courts. Nothing in these Terms requires you to use arbitration or to give up your right to bring or join a claim in court; you keep all rights you have as a consumer to access the courts and any ombudsman or alternative dispute resolution scheme that applies.</p>
               </div>
 
               <div className="legal-section">
-                <p className="legal-section-title">19. Limitations of liability</p>
-                <p>IN NO EVENT WILL WE OR OUR DIRECTORS, EMPLOYEES, OR AGENTS BE LIABLE TO YOU OR ANY THIRD PARTY FOR ANY DIRECT, INDIRECT, CONSEQUENTIAL, EXEMPLARY, INCIDENTAL, SPECIAL, OR PUNITIVE DAMAGES, INCLUDING LOST PROFIT, LOST REVENUE, LOSS OF DATA, OR OTHER DAMAGES ARISING FROM YOUR USE OF THE SERVICES, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. OUR LIABILITY TO YOU FOR ANY CAUSE WHATSOEVER WILL AT ALL TIMES BE LIMITED TO THE AMOUNT PAID, IF ANY, BY YOU TO US DURING THE SIX (6) MONTH PERIOD PRIOR TO ANY CAUSE OF ACTION ARISING.</p>
+                <p className="legal-section-title">15. General</p>
+                <p>These Terms, together with our Privacy Policy, are the entire agreement between us. If any part is found to be unenforceable, the rest continues to apply. Our delay in enforcing a term is not a waiver of it. We may transfer our rights and obligations to another organisation, but this will not affect your rights under these Terms, and we will tell you if it happens. We may update these Terms from time to time; where changes materially affect you we will give you reasonable notice, and, where required by law or where a change is materially adverse, we may ask you to accept the updated Terms before continuing to use the Services. Your continued use after notice of a non-material change means you accept the updated Terms.</p>
+                <p>All communications may be electronic, and you agree that electronic communications, agreements, and notices satisfy any legal requirement that they be in writing.</p>
               </div>
 
               <div className="legal-section">
-                <p className="legal-section-title">20. Indemnification</p>
-                <p>You agree to defend, indemnify, and hold us harmless, including our subsidiaries, affiliates, and all of our respective officers, agents, partners, and employees, from and against any loss, damage, liability, claim, or demand, including reasonable attorneys&rsquo; fees and expenses, made by any third party due to or arising out of: (1) use of the Services; (2) breach of these Legal Terms; (3) any breach of your representations and warranties set forth in these Legal Terms; (4) your violation of the rights of a third party, including but not limited to intellectual property rights; or (5) any overt harmful act toward any other user of the Services.</p>
-              </div>
-
-              <div className="legal-section">
-                <p className="legal-section-title">21. User data</p>
-                <p>We will maintain certain data that you transmit to the Services for the purpose of managing the performance of the Services, as well as data relating to your use of the Services. Although we perform regular routine backups of data, you are solely responsible for all data that you transmit or that relates to any activity you have undertaken using the Services. You agree that we shall have no liability to you for any loss or corruption of any such data.</p>
-              </div>
-
-              <div className="legal-section">
-                <p className="legal-section-title">22. Electronic communications, transactions, and signatures</p>
-                <p>Visiting the Services, sending us emails, and completing online forms constitute electronic communications. You consent to receive electronic communications, and you agree that all agreements, notices, disclosures, and other communications we provide to you electronically satisfy any legal requirement that such communication be in writing. You hereby agree to the use of electronic signatures, contracts, orders, and other records, and to electronic delivery of notices, policies, and records of transactions initiated or completed by us or via the Services.</p>
-              </div>
-
-              <div className="legal-section">
-                <p className="legal-section-title">23. Miscellaneous</p>
-                <p>These Legal Terms and any policies or operating rules posted by us on the Services constitute the entire agreement and understanding between you and us. Our failure to exercise or enforce any right or provision of these Legal Terms shall not operate as a waiver of such right or provision. If any provision or part of a provision of these Legal Terms is determined to be unlawful, void, or unenforceable, that provision is deemed severable from these Legal Terms and does not affect the validity and enforceability of any remaining provisions. There is no joint venture, partnership, employment or agency relationship created between you and us as a result of these Legal Terms or use of the Services.</p>
-              </div>
-
-              <div className="legal-section">
-                <p className="legal-section-title">24. Dietary safety and preferences</p>
-                <p>Sauceful generates meal suggestions using artificial intelligence based on the household dietary preferences you enter. While we design the Service to account for the preferences and foods to avoid that you provide, <strong>you are responsible for checking that every meal, ingredient, and recipe is safe and suitable for everyone in your household before preparing or eating it.</strong> The AI may occasionally make errors, including suggesting ingredients that conflict with stated preferences. Always independently verify ingredients and recipes, especially where dietary requirements or food avoidances are involved.</p>
-                <p>Never rely solely on Sauceful where dietary safety is critical. Sauceful does not provide medical, nutritional, or dietary advice. If you or a household member has a serious allergy or medical condition requiring dietary management, consult a qualified medical professional or registered dietitian.</p>
-              </div>
-
-              <div className="legal-section">
-                <p className="legal-section-title">25. Contact us</p>
-                <p>In order to resolve a complaint regarding the Services or to receive further information regarding use of the Services, please contact us at:</p>
+                <p className="legal-section-title">16. Contact us</p>
                 <p>
                   <strong>Sauceful Ltd</strong><br />
-                  United Kingdom<br />
-                  <a href="https://mail.google.com/mail/?view=cm&to=hello@sauceful.co.uk" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--c-peach-dk)' }}>hello@sauceful.co.uk</a>
+                  4 Shaw Street, Bishop&rsquo;s Stortford, CM23 2TT, United Kingdom<br />
+                  Email: <a href="https://mail.google.com/mail/?view=cm&to=hello@sauceful.co.uk" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--c-peach-dk)' }}>hello@sauceful.co.uk</a><br />
+                  Company Number: 17261322
                 </p>
               </div>
 

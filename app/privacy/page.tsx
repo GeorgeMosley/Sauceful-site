@@ -15,140 +15,151 @@ export default function Privacy() {
           <div className="legal-card pop">
             <span className="eyebrow">★ Legal</span>
             <h1 className="h2 legal-title">Privacy Policy</h1>
-            <p className="legal-updated">Last updated June 01, 2026</p>
+            <p className="legal-updated">Last updated 24th June 2026</p>
             <p className="legal-note">
-              This Privacy Notice for Sauceful Ltd (&lsquo;we&rsquo;, &lsquo;us&rsquo;, or &lsquo;our&rsquo;) describes
-              how and why we might access, collect, store, use, and/or share your personal information when
-              you use our services, including when you download and use our mobile application (Sauceful).
-              Questions or concerns? Contact us at{' '}
+              This Privacy Notice explains how Sauceful Ltd (&lsquo;we&rsquo;, &lsquo;us&rsquo;, or &lsquo;our&rsquo;)
+              collects, uses, shares, and protects your personal information when you use the Sauceful mobile
+              application and related services (the &lsquo;Services&rsquo;). It also explains your rights under the
+              UK GDPR and the Data Protection Act 2018. If you have any questions, contact us at{' '}
               <a href="https://mail.google.com/mail/?view=cm&to=hello@sauceful.co.uk" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--c-peach-dk)' }}>hello@sauceful.co.uk</a>.
             </p>
             <hr className="legal-divider" />
 
             <div className="legal-content">
 
-              <div className="legal-section">
-                <p className="legal-section-title">Summary of Key Points</p>
-                <p><strong>What personal information do we process?</strong> When you visit, use, or navigate our Services, we may process personal information depending on how you interact with us and the Services, the choices you make, and the products and features you use.</p>
-                <p><strong>Do we process any sensitive personal information?</strong> Some of the information may be considered &lsquo;special&rsquo; or &lsquo;sensitive&rsquo;, for example health data relating to dietary requirements. We may process sensitive personal information when necessary with your consent or as otherwise permitted by applicable law.</p>
-                <p><strong>Do we collect any information from third parties?</strong> We do not collect any information from third parties.</p>
-                <p><strong>How do we keep your information safe?</strong> We have adequate organisational and technical processes and procedures in place to protect your personal information. However, no electronic transmission over the internet can be guaranteed to be 100% secure.</p>
-              </div>
-
               <div className="legal-toc">
                 {[
-                  'What information do we collect?',
-                  'How do we process your information?',
-                  'What legal bases do we rely on to process your personal information?',
-                  'When and with whom do we share your personal information?',
-                  'Do we offer artificial intelligence-based products?',
-                  'How long do we keep your information?',
-                  'How do we keep your information safe?',
-                  'Do we collect information from minors?',
-                  'What are your privacy rights?',
-                  'Controls for Do-Not-Track features',
-                  'Do we make updates to this notice?',
-                  'How can you contact us about this notice?',
-                  'How can you review, update, or delete the data we collect from you?',
+                  'Who we are (Data Controller)',
+                  'The information we collect',
+                  'Children’s and household members’ data',
+                  'How and why we use your information (legal bases)',
+                  'Automated meal planning (how the AI is used)',
+                  'Who we share your information with',
+                  'Your data and the use of AI',
+                  'International transfers',
+                  'Marketing and cookies',
+                  'How long we keep your information',
+                  'How we keep your information safe',
+                  'Your rights',
+                  'Changes to this notice',
+                  'How to contact us',
                 ].map((item, i) => (
                   <p className="legal-toc-item" key={i}>{i + 1}. {item}</p>
                 ))}
               </div>
 
               <div className="legal-section">
-                <p className="legal-section-title">1. What information do we collect?</p>
-                <p className="legal-in-short">In Short: We collect personal information that you provide to us.</p>
-                <p>We collect personal information that you voluntarily provide to us when you register on the Services, express an interest in obtaining information about us or our products and Services, when you participate in activities on the Services, or otherwise when you contact us.</p>
-                <p>The personal information we collect may include: names, phone numbers, email addresses, passwords, contact preferences, billing addresses, debit/credit card numbers, household dietary preferences, and occupants in household.</p>
-                <p><strong>Sensitive Information.</strong> When necessary, with your consent or as otherwise permitted by applicable law, we process health data (such as dietary requirements and food avoidances).</p>
-                <p><strong>Payment Data.</strong> We may collect data necessary to process your payment if you choose to make purchases. All payment data is handled and stored by Stripe. You may find their privacy notice at <a href="https://stripe.com/gb/privacy" style={{ color: 'var(--c-peach-dk)' }} target="_blank" rel="noopener noreferrer">stripe.com/gb/privacy</a>.</p>
-                <p><strong>Push Notifications.</strong> We may request to send you push notifications regarding your account or certain features of the application. If you wish to opt out, you may turn them off in your device&rsquo;s settings.</p>
+                <p className="legal-section-title">1. Who we are (Data Controller)</p>
+                <p>Sauceful Ltd is the &lsquo;controller&rsquo; responsible for your personal information. Our details are:</p>
+                <ul>
+                  <li>Company: Sauceful Ltd, registered in England and Wales, Company Number 17261322.</li>
+                  <li>Registered address: 4 Shaw Street, Bishop&rsquo;s Stortford, CM23 2TT</li>
+                  <li>ICO registration number: ZC166900.</li>
+                  <li>Contact for privacy matters: <a href="https://mail.google.com/mail/?view=cm&to=hello@sauceful.co.uk" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--c-peach-dk)' }}>hello@sauceful.co.uk</a>.</li>
+                </ul>
+                <p>We are registered with the Information Commissioner&rsquo;s Office (&lsquo;ICO&rsquo;) and pay the data protection fee. You can verify our registration on the ICO public register.</p>
               </div>
 
               <div className="legal-section">
-                <p className="legal-section-title">2. How do we process your information?</p>
-                <p className="legal-in-short">In Short: We process your information to provide, improve, and administer our Services, communicate with you, for security and fraud prevention, and to comply with law.</p>
-                <p>We process your personal information for a variety of reasons, including:</p>
+                <p className="legal-section-title">2. The information we collect</p>
+                <p>We collect personal information that you provide directly to us when you join the waitlist, create an account, set up your household, contact support, or otherwise use the Services. This includes:</p>
                 <ul>
-                  <li>To facilitate account creation and authentication and otherwise manage user accounts.</li>
-                  <li>To deliver and facilitate delivery of services to the user.</li>
-                  <li>To respond to user enquiries and offer support to users.</li>
-                  <li>To save or protect an individual&rsquo;s vital interest, such as to prevent harm.</li>
+                  <li>Identity and contact data: your name, email address, and contact preferences.</li>
+                  <li>Account data: your password (stored in hashed form) and account settings.</li>
+                  <li>Household data: the number of occupants in your household and dietary preferences, likes, and dislikes you choose to enter. This may include allergy, intolerance or dietary requirement information where you choose to provide it.</li>
+                  <li>Payment data: we do not collect or store any payment card or billing address details. All purchases are made as in-app purchases through the Apple App Store or Google Play, and payment is handled entirely by Apple or Google under their own terms. We receive only confirmation of your subscription status from our subscription-management provider, RevenueCat (see section 6).</li>
+                </ul>
+                <p>App, device and usage data: where applicable, we may collect app usage events, device information, push notification tokens, crash logs, support communications, waitlist metadata, AI prompts and AI-generated outputs, in each case only as needed to provide, secure, troubleshoot and improve the Services.</p>
+                <p><strong>Sensitive (special category) information.</strong> Some information you choose to enter — such as allergies, intolerances, and other dietary requirements linked to health — is &lsquo;special category&rsquo; health data under Article 9 UK GDPR. We only process this data where you have given us your explicit consent by selecting a dedicated consent checkbox at the point you enter it, and solely to generate and tailor your meal plans.</p>
+                <p>You can withdraw this consent at any time (see section 10). If you withdraw consent for allergy or health-related dietary data, we may be unable to provide the core personalised meal-planning features and may need to delete or anonymise the relevant health data or close the account, as explained in the app. Where required or appropriate, we maintain an Appropriate Policy Document or equivalent internal governance record for this processing, and we keep our lawful basis and special category condition under review.</p>
+              </div>
+
+              <div className="legal-section">
+                <p className="legal-section-title">3. Children&rsquo;s and household members&rsquo; data</p>
+                <p>The Services are intended only for adults aged 18 and over, and only an adult account holder may register. However, because Sauceful is designed for households and families, you may choose to enter information about other members of your household, including children — for example, the number of occupants or a child&rsquo;s dietary requirement or allergy.</p>
+                <p>If you enter information about another person, including a child, you confirm that you are responsible for that person&rsquo;s household arrangements and are entitled to provide their information. We ask that you enter the minimum necessary information and avoid identifying household members by full name, precise age or other unnecessary identifiers where this is not needed. We treat any health-related information about children with the same explicit-consent basis and safeguards described in section 2, and we have carried out a Data Protection Impact Assessment covering this processing.</p>
+                <p>We do not knowingly allow anyone under 18 to create an account. If we learn that an account has been created by someone under 18, we will deactivate it and delete the associated data. If you believe a child has registered or that we hold a child&rsquo;s data inappropriately, contact us at <a href="https://mail.google.com/mail/?view=cm&to=hello@sauceful.co.uk" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--c-peach-dk)' }}>hello@sauceful.co.uk</a>.</p>
+              </div>
+
+              <div className="legal-section">
+                <p className="legal-section-title">4. How and why we use your information (legal bases)</p>
+                <p>Under the UK GDPR we must have a lawful basis for each use of your personal information. The table below summarises what we do and why.</p>
+                <ul>
+                  <li>To create and manage your account and provide the Services — lawful basis: performance of our contract with you.</li>
+                  <li>To generate personalised meal plans from your dietary preferences and requirements — lawful basis: performance of our contract; and, for any health-related dietary data, your explicit consent (Article 9(2)(a)).</li>
+                  <li>To take payment and manage subscriptions — lawful basis: performance of our contract.</li>
+                  <li>To respond to your enquiries and provide support — lawful basis: performance of our contract and our legitimate interests in helping our users.</li>
+                  <li>To send service messages about your account, billing, the Services or changes to this notice — lawful basis: performance of our contract, our legitimate interests and/or our legal obligations. We do not currently send marketing messages unless you have separately opted in. If we introduce marketing messages in future, we will apply any consent or soft opt-in requirements that apply under PECR and provide an easy unsubscribe or opt-out route.</li>
+                  <li>To keep the Services secure and prevent fraud and misuse — lawful basis: our legitimate interests and our legal obligations.</li>
+                  <li>To comply with our legal and regulatory obligations — lawful basis: compliance with a legal obligation.</li>
                 </ul>
               </div>
 
               <div className="legal-section">
-                <p className="legal-section-title">3. What legal bases do we rely on to process your information?</p>
-                <p className="legal-in-short">In Short: We only process your personal information when we believe it is necessary and we have a valid legal reason to do so under applicable law.</p>
-                <p>The General Data Protection Regulation (GDPR) and UK GDPR require us to explain the valid legal bases we rely on. We may rely on:</p>
+                <p className="legal-section-title">5. Automated meal planning (how the AI is used)</p>
+                <p>Sauceful uses artificial intelligence to generate meal suggestions automatically from the preferences and requirements you enter. This involves automated processing of your data.</p>
+                <p>These meal suggestions do not produce legal effects or similarly significant effects concerning you within the meaning of Article 22 UK GDPR — they are recommendations you remain free to accept, change, or ignore, they are not applied automatically, and you must always check them yourself (see our Terms &amp; Conditions). You can contact us if you would like to discuss the automated nature of the Service or request human review of a particular outcome.</p>
+              </div>
+
+              <div className="legal-section">
+                <p className="legal-section-title">6. Who we share your information with</p>
+                <p>We do not sell your personal information. We share it only with the categories of recipient below, and only as far as needed to run the Services:</p>
                 <ul>
-                  <li><strong>Consent.</strong> We may process your information if you have given us permission to use your personal information for a specific purpose. You can withdraw your consent at any time.</li>
-                  <li><strong>Performance of a Contract.</strong> We may process your personal information when we believe it is necessary to fulfil our contractual obligations to you.</li>
-                  <li><strong>Legal Obligations.</strong> We may process your information where necessary for compliance with our legal obligations.</li>
-                  <li><strong>Vital Interests.</strong> We may process your information where necessary to protect your vital interests or the vital interests of a third party.</li>
+                  <li><strong>AI service providers (including Anthropic).</strong> To generate your meal plans, the relevant inputs and outputs — which may include dietary and health information — are processed by our AI provider under a contract that restricts their use of the data to providing the service to us. Anthropic processes API prompts and outputs using US-based infrastructure. Anthropic does not use API customer data to train its models, and the relevant supplier terms should address retention, security, sub-processors, model-training restrictions, abuse monitoring and processing locations.</li>
+                  <li><strong>Payment processors (Apple and Google).</strong> All purchases are made as in-app purchases through the Apple App Store or Google Play. Apple or Google collects and processes your payment using your existing store account; we never receive or store your card details. Our subscription-management provider, RevenueCat, receives a transaction receipt confirming your subscription status. RevenueCat processes subscription and entitlement data and may process that lower-sensitivity subscription data in the United States.</li>
+                  <li><strong>Hosting and database providers</strong>, including Supabase, which hosts the app database, authentication and stored app data in the United Kingdom.</li>
+                  <li><strong>Communications and website form providers</strong>, including providers who help us send service emails, push notifications or transmit website form submissions without permanent storage.</li>
+                  <li><strong>Analytics providers (if used).</strong> To understand how the Services are used and improve them. This currently includes Vercel Analytics for anonymous website page-view data and may include analytics, crash-reporting, attribution or performance tools, subject to any consent required for non-essential cookies, SDKs or similar technologies.</li>
+                  <li><strong>Professional advisers and authorities.</strong> Such as lawyers, accountants, and regulators where required by law.</li>
+                  <li><strong>A buyer or successor.</strong> If we are involved in a merger, acquisition, financing, or sale of assets, your information may be transferred as part of that transaction.</li>
                 </ul>
+                <p>All providers who process personal information on our behalf do so as our &lsquo;processors&rsquo; under written contracts that meet UK GDPR requirements.</p>
               </div>
 
               <div className="legal-section">
-                <p className="legal-section-title">4. When and with whom do we share your personal information?</p>
-                <p className="legal-in-short">In Short: We may share information in specific situations described in this section.</p>
-                <p><strong>Business Transfers.</strong> We may share or transfer your information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company.</p>
+                <p className="legal-section-title">7. Your data and the use of AI</p>
+                <p>We do not use your personal information to train AI models, and our AI provider does not use your inputs or outputs to train its models. Your data is used only to generate your own meal plans and to operate, secure, maintain and improve the Services, subject to the limits and safeguards described in this notice.</p>
               </div>
 
               <div className="legal-section">
-                <p className="legal-section-title">5. Do we offer artificial intelligence-based products?</p>
-                <p className="legal-in-short">In Short: We offer products, features, or tools powered by artificial intelligence, machine learning, or similar technologies.</p>
-                <p>As part of our Services, we offer products, features, or tools powered by artificial intelligence (collectively, &lsquo;AI Products&rsquo;). We provide the AI Products through third-party service providers (&lsquo;AI Service Providers&rsquo;), including Anthropic. Your input, output, and personal information will be shared with and processed by these AI Service Providers to enable your use of our AI Products. You must not use the AI Products in any way that violates the terms or policies of any AI Service Provider.</p>
-                <p>All personal information processed using our AI Products is handled in line with this Privacy Notice and our agreement with third parties, ensuring high security and safeguarding your personal information throughout the process.</p>
+                <p className="legal-section-title">8. International transfers</p>
+                <p>The Services are hosted in the United Kingdom. Some of our service providers (including certain AI or infrastructure providers) may process your information outside the UK. Where that happens, we ensure an appropriate safeguard is in place, such as a UK &lsquo;adequacy&rsquo; regulation, the UK International Data Transfer Agreement (&lsquo;IDTA&rsquo;), or the UK Addendum to the EU Standard Contractual Clauses, and we carry out any transfer risk assessment required for the relevant provider and transfer. Anthropic is currently the main provider that may receive allergy or health-related dietary data outside the UK. You can request details of the safeguards we use by contacting us.</p>
               </div>
 
               <div className="legal-section">
-                <p className="legal-section-title">6. How long do we keep your information?</p>
-                <p className="legal-in-short">In Short: We keep your information for as long as necessary to fulfil the purposes outlined in this Privacy Notice unless otherwise required by law.</p>
-                <p>We will only keep your personal information for as long as it is necessary for the purposes set out in this Privacy Notice. No purpose in this notice will require us keeping your personal information for longer than six (6) months past the termination of the user&rsquo;s account.</p>
-                <p>When we have no ongoing legitimate business need to process your personal information, we will either delete or anonymise such information, or securely store it and isolate it from any further processing until deletion is possible.</p>
+                <p className="legal-section-title">9. Marketing and cookies</p>
+                <p><strong>Marketing.</strong> We will only send you marketing messages where you have opted in, or where the law otherwise permits (for example, about similar products to those you have bought, with an easy way to opt out). You can unsubscribe at any time using the link in any marketing email or by contacting us.</p>
+                <p><strong>Cookies and similar technologies.</strong> Our website and app may use cookies and similar technologies. We only set non-essential cookies (such as analytics) with your consent, in line with the Privacy and Electronic Communications Regulations (&lsquo;PECR&rsquo;). You can manage your preferences through the cookie banner or your device settings. Similar technologies may include SDKs, device identifiers, local storage and app analytics tools.</p>
+                <p><strong>Do-Not-Track.</strong> There is no agreed industry standard for Do-Not-Track signals, so we do not currently respond to them.</p>
               </div>
 
               <div className="legal-section">
-                <p className="legal-section-title">7. How do we keep your information safe?</p>
-                <p className="legal-in-short">In Short: We aim to protect your personal information through a system of organisational and technical security measures.</p>
-                <p>We have implemented appropriate and reasonable technical and organisational security measures designed to protect the security of any personal information we process. However, no electronic transmission over the Internet or information storage technology can be guaranteed to be 100% secure. Transmission of personal information to and from our Services is at your own risk. You should only access the Services within a secure environment.</p>
+                <p className="legal-section-title">10. How long we keep your information</p>
+                <p>We keep your personal information only for as long as we need it for the purposes set out in this notice. For active accounts, we keep allergy and dietary information for as long as needed to generate suitable meal plans. Following an account deletion request, we delete or anonymise allergy and health-related data within 30 days, although deletion from backups and operational systems may take up to 90 days. For inactive accounts, we may delete or anonymise personal data after 12 months of inactivity unless we have a legitimate business reason to retain it for longer.</p>
+                <p>Some information must be kept for longer to meet legal obligations — for example, we retain transaction and tax records for approximately six (6) years as required by HMRC. Where we no longer have a legitimate need to process your information, we delete or anonymise it, or securely isolate it until deletion is possible.</p>
               </div>
 
               <div className="legal-section">
-                <p className="legal-section-title">8. Do we collect information from minors?</p>
-                <p className="legal-in-short">In Short: We do not knowingly collect data from or market to children under 18 years of age.</p>
-                <p>We do not knowingly collect, solicit data from, or market to children under 18 years of age, nor do we knowingly sell such personal information. By using the Services, you represent that you are at least 18. If we learn that personal information from users less than 18 years of age has been collected, we will deactivate the account and take reasonable measures to promptly delete such data. If you become aware of any data we may have collected from children under age 18, please contact us at <a href="https://mail.google.com/mail/?view=cm&to=hello@sauceful.co.uk" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--c-peach-dk)' }}>hello@sauceful.co.uk</a>.</p>
+                <p className="legal-section-title">11. How we keep your information safe</p>
+                <p>We use appropriate technical and organisational measures to protect your personal information, including access controls, encryption in transit, encryption at rest where appropriate, least-privilege access, supplier due diligence and breach-response processes. No transmission or storage method is completely secure, so while we work hard to protect your information we cannot guarantee absolute security.</p>
+                <p>If a personal data breach occurs that is likely to result in a risk to your rights, we will notify the ICO within 72 hours where required, and will tell you without undue delay where the breach is likely to result in a high risk to you.</p>
               </div>
 
               <div className="legal-section">
-                <p className="legal-section-title">9. What are your privacy rights?</p>
-                <p className="legal-in-short">In Short: In some regions, such as the UK and EEA, you have rights that allow you greater access to and control over your personal information.</p>
-                <p>In some regions (like the EEA, UK, and Switzerland), you have certain rights under applicable data protection laws. These may include the right to request access and obtain a copy of your personal information, to request rectification or erasure, to restrict the processing of your personal information, to data portability, and not to be subject to automated decision-making.</p>
-                <p>If you are located in the EEA or UK and you believe we are unlawfully processing your personal information, you also have the right to complain to your Member State data protection authority or the UK data protection authority (the ICO).</p>
-                <p><strong>Withdrawing your consent:</strong> If we are relying on your consent to process your personal information, you have the right to withdraw your consent at any time by contacting us at <a href="https://mail.google.com/mail/?view=cm&to=hello@sauceful.co.uk" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--c-peach-dk)' }}>hello@sauceful.co.uk</a>.</p>
-                <p>If you would like to review or change the information in your account or terminate your account, you can log in to your account settings and update your user account, or email us directly.</p>
+                <p className="legal-section-title">12. Your rights</p>
+                <p>If you are in the UK, you have the right to: access a copy of your information; have inaccurate information corrected; have your information erased; restrict or object to our processing; data portability; and to withdraw consent at any time where we rely on it (including for health data). You also have the right not to be subject to a solely automated decision that produces legal or similarly significant effects — see section 5.</p>
+                <p>To exercise any of these rights, contact us at <a href="https://mail.google.com/mail/?view=cm&to=hello@sauceful.co.uk" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--c-peach-dk)' }}>hello@sauceful.co.uk</a>. We will respond within one month. You can usually access and update your account information directly in the app.</p>
+                <p>If you are unhappy with how we have handled your information, you can complain to the Information Commissioner&rsquo;s Office at ico.org.uk, although we would welcome the chance to resolve your concerns first.</p>
               </div>
 
               <div className="legal-section">
-                <p className="legal-section-title">10. Controls for Do-Not-Track features</p>
-                <p>Most web browsers and some mobile operating systems include a Do-Not-Track (&lsquo;DNT&rsquo;) feature or setting you can activate to signal your privacy preference not to have data about your online browsing activities monitored and collected. At this stage, no uniform technology standard for recognising and implementing DNT signals has been finalised. As such, we do not currently respond to DNT browser signals or any other mechanism that automatically communicates your choice not to be tracked online.</p>
+                <p className="legal-section-title">13. Changes to this notice</p>
+                <p>We may update this notice from time to time. We will change the &lsquo;Last updated&rsquo; date above, and where changes are material we will notify you in the app or by email and, where required, obtain fresh consent or update our lawful-basis assessment before using your information for a new purpose. Please review it regularly.</p>
               </div>
 
               <div className="legal-section">
-                <p className="legal-section-title">11. Do we make updates to this notice?</p>
-                <p className="legal-in-short">In Short: Yes, we will update this notice as necessary to stay compliant with relevant laws.</p>
-                <p>We may update this Privacy Notice from time to time. The updated version will be indicated by an updated &lsquo;Revised&rsquo; date at the top of this Privacy Notice. If we make material changes, we may notify you either by prominently posting a notice of such changes or by directly sending you a notification. We encourage you to review this Privacy Notice frequently.</p>
-              </div>
-
-              <div className="legal-section">
-                <p className="legal-section-title">12. How can you contact us about this notice?</p>
-                <p>If you have questions or comments about this notice, you may email us at <a href="https://mail.google.com/mail/?view=cm&to=hello@sauceful.co.uk" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--c-peach-dk)' }}>hello@sauceful.co.uk</a> or contact us by post at: Sauceful Ltd, United Kingdom.</p>
-              </div>
-
-              <div className="legal-section">
-                <p className="legal-section-title">13. How can you review, update, or delete the data we collect from you?</p>
-                <p>Based on the applicable laws of your country, you may have the right to request access to the personal information we collect from you, details about how we have processed it, correct inaccuracies, or delete your personal information. You may also have the right to withdraw your consent to our processing of your personal information. To request to review, update, or delete your personal information, please contact us at <a href="https://mail.google.com/mail/?view=cm&to=hello@sauceful.co.uk" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--c-peach-dk)' }}>hello@sauceful.co.uk</a>.</p>
+                <p className="legal-section-title">14. How to contact us</p>
+                <p>For any privacy question, or to exercise your rights, email us at <a href="https://mail.google.com/mail/?view=cm&to=hello@sauceful.co.uk" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--c-peach-dk)' }}>hello@sauceful.co.uk</a>, or write to: Sauceful Ltd, 4 Shaw Street, Bishop&rsquo;s Stortford, CM23 2TT, United Kingdom.</p>
               </div>
 
             </div>
